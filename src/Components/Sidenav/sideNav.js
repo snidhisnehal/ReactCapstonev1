@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 const SideNav = () => {
   const [data, setData] = useState([]);
+  // const [products, setProducts] = useState([]);
   // const { id } = useParams();
   const fetchData = () => {
       fetch(`https://fakestoreapi.com/products/categories`)
@@ -11,6 +12,7 @@ const SideNav = () => {
           })
          .then(data => {
              setData(data)
+            //  setProducts(data);
           })
       console.log(data)
   }
@@ -20,6 +22,13 @@ const SideNav = () => {
   useEffect(() => {
      fetchData()
  }, )
+
+//  const filterProduct =(cat)=> {
+//   const updatedList = data.filter((x)=>x.category === cat);
+//   console.log("men's clothing",updatedList);
+//  setProducts(updatedList);
+// setFilter(updatedList);
+// }
 
   return (
     <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 sidenav'>
@@ -31,7 +40,7 @@ const SideNav = () => {
         return(
           <>
             <label className="filter-container">{category}
-                <input type="checkbox" />
+                <input type="checkbox"  />
                 <span className="checkmark"></span>
             </label>
           

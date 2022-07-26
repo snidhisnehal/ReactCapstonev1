@@ -4,6 +4,7 @@ import Card from './Card';
 
 const Product = () => {
     const [data, setData] = useState([]);
+    // const [products, setProducts] = useState([]);
     const [loading, setloading] =useState(false)
     const fetchData = () => {
         setloading(true);
@@ -14,6 +15,7 @@ const Product = () => {
             .then(data => {
                 setData(data);
                 setloading(false);
+                // setProducts(data);
 
             })
         console.log(data)
@@ -25,6 +27,7 @@ const Product = () => {
          fetchData()
      }, [])
     
+
      const [sort,setSort] = useState();
      const onfilterChange = (filter) => {
         console.log("onfilter", sort);
@@ -38,8 +41,14 @@ const Product = () => {
         }
       }
 
-    return (
+      // const filterProduct =(cat)=> {
+      //     const updatedList = data.filter((x)=>x.category === cat);
+      //     console.log("men's clothing",updatedList);
+      //    setProducts(updatedList);
+      //   }
 
+    return (<>
+      
         
         <div className='aem-Grid aem-Grid--12 card-container'>
            {
@@ -56,13 +65,27 @@ const Product = () => {
           <option value="Lowest">low to high</option>
          
         </select>
+        {/* <div className='Attribute-first'>
+      <h4>Categories</h4>
+      
+       <input type="checkbox" aria-label="checkbox" onClick={()=>filterProduct("jewelery")}/>
+       <label > Jewellery</label><br />
+      <input type="checkbox" aria-label="checkbox" onClick={()=>filterProduct("electronics")}/>
+      <label >  Electronics</label><br />
+      <input type="checkbox" aria-label="checkbox" onClick={()=>filterProduct("men's clothing")} />
+      <label >  Men’s Clothing</label><br />
+      <input type="checkbox" aria-label="checkbox" onClick={()=>filterProduct("women's clothing")}/>
+      <label >Women’s Clothing</label><br />
+      
+</div> */}
       </div>
-        <Card data={data} loading={loading}/>
+        <Card data={data} loading={loading} />
           
         </>}
         
 
       </div>
+      </>
     )
 }
 

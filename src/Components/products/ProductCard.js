@@ -6,6 +6,7 @@ import Product from './Product'
 
 const ProductCard = () => {
   
+  
   return (
     <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 container'>
       <div className='aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--phone--hide'><SideNav /></div>

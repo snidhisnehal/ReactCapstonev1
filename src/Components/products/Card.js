@@ -23,7 +23,7 @@ export default function Card({ data }) {
   const currentData = data.slice(firstcardIndex, lastcardIndex);
 
   const paginate = pageNumber => setPage(pageNumber);
-  console.log(data.length);
+  console.log(currentData);
   
   
 

@@ -14,7 +14,8 @@ import {handleAction} from '../../redux/counterSlice';
 // import slack from '../../../Images/slack.svg'
 // import sunrise from '../../../Images/sunrise.svg'
 import {Link} from 'react-router-dom'
- import  IncDecCount  from '../../Components/IncDecButtn/IncDecCount'
+import  IncDecCount  from '../../Components/IncDecButtn/IncDecCount'
+import SimpleImageSlider from "react-simple-image-slider";
 
 const SingleItem = ({data}) => {
     
@@ -23,7 +24,15 @@ const SingleItem = ({data}) => {
         dispatch(handleAction.addItem({ ...data }))
         console.log(data);
     }
+     
+    const images = [
+        { url: data.image },
+        { url: data.image},
+        { url: data.image},
+        { url: data.image },
+        { url: data.image }
     
+      ];
 
     
     // let productTitle = data.title?.split(' ').slice(0,3).join(' ');
@@ -41,9 +50,21 @@ const SingleItem = ({data}) => {
                             <img src={data.image} alt="product" />
                             <img src={Down} alt="carousal-down" className='down' />
                         </div>
-                        <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
+                        {/* <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
                             <p>Clothing / Women’s / Outerwear</p>
                             <img src={data.image} alt="Product" />
+                        </div> */}
+                        {/* <div className="aem-Grid aem-Grid--12 aem-GridColumn--default--hide aem-Grid--phone--12"> */}
+                        <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
+                        <p>Clothing / Women’s / Outerwear</p>
+                        <SimpleImageSlider
+                            width={400}
+                            height={550}
+                            images={images}
+                            showBullets={true}
+                            // showNavs={true}
+                          />
+                        {/* </div> */}
                         </div>
                     </div>
                 </div>
