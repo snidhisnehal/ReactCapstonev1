@@ -1,0 +1,53 @@
+//sidenav.css
+.sidenav {
+    padding-top: 6.8rem;
+    text-align: left;
+    color: $--gray-d2;
+    padding-right: 3.7rem;
+
+    p {
+        font: normal normal normal 1.6rem/2.4rem Mulish;
+    }
+
+
+    h6 {
+        font: normal normal normal 2rem/1.4rem Mulish;
+
+        color: $--gray-d2;
+        padding-top: 1.5rem;
+        padding-bottom: 2.7rem;
+
+        p {
+            text-decoration: underline;
+            font: normal normal 600 1.4rem/2.4rem Mulish;
+            letter-spacing: 0px;
+            color: $--gray-d2;
+            
+
+        }
+
+        .filter {
+            font-size: 2rem;
+            padding-top: 3.5rem;
+            padding-bottom: 1.6rem;
+        }
+    }
+
+    hr {
+        padding-left: 1rem;
+    }
+
+    label {
+        font-size: 1.6rem;
+        padding-bottom:2.4rem ;
+        span {
+            padding: .5rem;
+        }
+    }
+
+    .option {
+        padding: 1.7rem 0;
+    }
+
+
+}

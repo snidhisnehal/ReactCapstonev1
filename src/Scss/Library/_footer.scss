@@ -1,0 +1,103 @@
+.rectangle {
+    // background-color: $gray-l1;
+    height: .4rem;
+    margin-top: 12.8rem;
+}
+
+.main-footer {
+    padding-bottom: 3.2rem;
+    
+    ul {
+        padding-top: 1.6rem;
+    }
+
+    ul li {
+        list-style-type: none;
+        text-align: left;
+        font-size: 1.6rem;
+        //color: $gray-3;
+        letter-spacing: 0rem;
+        font-weight: normal;
+    }
+
+    img {
+        padding: 1.1rem .5rem .5rem 0;
+        
+    }
+
+    .img1 {
+        width: 2rem;
+        // height: 20rem;
+        
+    }
+
+    .img2 {
+        width: 1.3rem;
+        // height: 20rem;
+        margin-left: .6rem;
+    }
+
+    .img3 {
+        width: 2.2rem;
+        // height: 18rem;
+        margin-left: .6rem;
+    }
+
+
+    .foot-head {
+        font-size: 1.6rem;
+        font-weight: 600;
+        // color:$col-black;
+        padding-top: 4.4rem;
+        text-align: left;
+
+    }
+}
+
+.sub-footer {
+    padding: 2.8rem 0;
+    // border-top: 1rem solid #00000033;
+    .logo-align{
+        text-align: left;
+    }
+
+    ul li {
+        display: inline;
+        list-style-type: none;
+        text-decoration: underline;
+        padding-left: 1.9rem;
+        font-size: 1.4rem;
+        //color: $col-black;
+        font: normal normal normal 1.4rem/1.8rem Proxima Nova;
+    }
+
+    .info {
+        text-align: center;
+        font-style: normal normal normal 1.4rem/1.8rem Mulish;
+        letter-spacing: 0rem;
+        // color: $gray-3;
+    }
+
+    .details {
+        text-align: right;
+    }
+
+
+
+}
+
+@media (max-width: 76.8rem) {
+    .main-footer{
+        padding-left: 6%;
+    }
+    .sub-footer {
+        .logo-align{
+        text-align: center;
+    }
+    .details {
+        text-align: center;
+    }
+
+    
+}
+}

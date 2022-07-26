@@ -1,0 +1,229 @@
+.main {
+    padding: 3.3rem 10rem 3rem 10rem;
+   p{
+    text-align: left;
+    @extend .regualr-body-m-16- ;
+    letter-spacing: 0px;
+    color: $--unnamed-color-172026;
+    padding-right: 1rem;
+   }
+}
+
+.single {
+
+    img {
+        width: 100%;
+        height: 12rem;
+        border: .1rem solid $border-gray;
+        padding: 0 1.7rem 1.6rem 0;
+
+    }
+
+    .down {
+        padding: 0 4.3rem 8.3rem 2.9rem;
+        border: none;
+    }
+
+}
+
+.full-image {
+    p {
+        display: none;
+        text-align: left;
+        font: normal normal normal 1.6rem/2.4rem Mulish;
+        letter-spacing: 0px;
+       color: $--unnamed-color-172026;
+    }
+
+    img {
+        width: 100%;
+        height: 68rem;
+        padding-right: 3.3rem;
+       
+    }
+
+}
+
+.detail-info {
+    text-align: left;
+
+
+    h3 {
+        font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+        letter-spacing: 0rem;
+       color: $--unnamed-color-172026;
+    }
+
+    .checked {
+        width: 1.6rem;
+        height: 1.5rem;
+        padding: .1rem;
+
+    }
+
+    p span {
+        text-decoration: underline;
+    }
+
+    .descrition {
+        padding-bottom: 1.6rem;
+    }
+
+
+
+    .color {
+        .img-color span {
+            padding-right: 1.6rem;
+        }
+
+        .add-sub {
+            text-align: left;
+
+        }
+
+
+
+        .cart-add {
+            width: 31.8rem;
+            height: 4rem;
+            /* UI Properties */
+            background: var(--primary-brand) 0% 0% no-repeat padding-box;
+            background: $primary-brand 0% 0% no-repeat padding-box;
+            border-radius: 2.8rem;
+            border: none;
+            margin-top: 4rem;
+            color: $--white;
+            a {
+               text-decoration: none;
+            }
+        }
+
+        .size {
+            span {
+                padding-right: 1.6rem;
+            }
+
+            button {
+                width: 5.4rem;
+                height: 4rem;
+                border: .2rem solid var(--gray-m1);
+                background: $--white 0% 0% no-repeat padding-box;
+                border: .2rem solid $--gray-m1;
+                border-radius: .6rem;
+                text-align: center;
+                font: normal normal 600 1.6rem/2rem Mulish;
+                letter-spacing: 0.32px;
+                color: $--unnamed-color-172026;
+            }
+
+            .like-share img {
+                width: 1.8rem;
+                height: 1.6rem;
+            }
+        }
+
+        h6 {
+            padding: 1.6rem 0;
+            font: normal normal 600 2rem/3rem Mulish;
+            letter-spacing: 0rem;
+             color: $--unnamed-color-172026;
+        }
+
+        img {
+            //     width: 64rem;
+            //     height: 40rem;
+            border-radius: .5rem;
+        }
+
+        .image1 {
+            background-color: $primary-L1;
+        }
+
+        .image2 {
+            background-color: $col-pink;
+        }
+
+        .image3 {
+             background-color: $--unnamed-color-172026;
+        }
+
+        .image4 {
+            background-color: $border-gray;
+        }
+
+        .like-share {
+            padding-left: 7.8rem;
+            padding-top: 2.4rem;
+            letter-spacing: 0.32px;
+            font: normal normal 600 1.6rem/2rem Mulish;
+
+            .heart img {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+
+            .share img {
+                width: 2rem;
+                height: 1.8rem;
+                margin-left: 3.2rem;
+
+            }
+        }
+    }
+
+
+
+}
+
+.description-product {
+    text-align: left;
+
+    p {
+        font: normal normal normal 1.6rem/2.4rem Mulish;
+        letter-spacing: 0rem;
+         color: $--unnamed-color-172026;
+    }
+
+    ul li {
+        list-style-type: none;
+        font: normal normal 600 1.6rem Mulish;
+        letter-spacing: 0rem;
+        color: $--unnamed-color-172026;
+    }
+
+    h3 {
+        font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+        letter-spacing: 0rem;
+         color: $--unnamed-color-172026;
+
+    }
+
+    h6 {
+        font: normal normal 600 2rem/2.5rem Mulish;
+        letter-spacing: 0rem;
+        color: $--unnamed-color-172026;
+        padding-top: 2.4rem;
+        padding-bottom: 1.6rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .detail-info {
+        .catogatry {
+            display: none;
+        }
+
+        
+    }
+
+    .main{
+        padding: 20px;
+    }
+
+    .full-image {
+        p {
+            display: block;
+        }
+    }
+    
+}
