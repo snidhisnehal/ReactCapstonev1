@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactCapstonev1/static/css/main.6eaed282.css",
-    "main.js": "/ReactCapstonev1/static/js/main.88654bec.js",
+    "main.js": "/ReactCapstonev1/static/js/main.143596ff.js",
     "static/js/787.fec80b04.chunk.js": "/ReactCapstonev1/static/js/787.fec80b04.chunk.js",
     "static/media/banner_fullsize_anim.png": "/ReactCapstonev1/static/media/banner_fullsize_anim.941b3a47a845e8dcda15.png",
     "static/media/mens_outerwear.png": "/ReactCapstonev1/static/media/mens_outerwear.bb7b8afbb76a3bd25233.png",
@@ -32,11 +32,11 @@
     "static/media/chevron-down.svg": "/ReactCapstonev1/static/media/chevron-down.fadc45040e456e5cea02f3cd047ee412.svg",
     "static/media/chevron-left.svg": "/ReactCapstonev1/static/media/chevron-left.9df9489142072f06d90f5fec86ae74d0.svg",
     "main.6eaed282.css.map": "/ReactCapstonev1/static/css/main.6eaed282.css.map",
-    "main.88654bec.js.map": "/ReactCapstonev1/static/js/main.88654bec.js.map",
+    "main.143596ff.js.map": "/ReactCapstonev1/static/js/main.143596ff.js.map",
     "787.fec80b04.chunk.js.map": "/ReactCapstonev1/static/js/787.fec80b04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6eaed282.css",
-    "static/js/main.88654bec.js"
+    "static/js/main.143596ff.js"
   ]
 }
