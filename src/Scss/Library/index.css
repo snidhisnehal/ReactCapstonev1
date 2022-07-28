@@ -76,7 +76,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-l-20-, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
+.regular-heading-l-20-, .shippingInform h6, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -116,7 +116,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regualr-body-m-16-, .main p, .moreInfo .collection p, .banner-content p {
+.regualr-body-m-16-, .shippingInform label, .shippingInform p, .main p, .moreInfo .collection p, .banner-content p {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5376,7 +5376,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-l-20-, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
+.regular-heading-l-20-, .shippingInform h6, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5416,7 +5416,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regualr-body-m-16-, .main p, .moreInfo .collection p, .banner-content p {
+.regualr-body-m-16-, .shippingInform label, .shippingInform p, .main p, .moreInfo .collection p, .banner-content p {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5723,7 +5723,7 @@ nav .toggle {
   background-color: #1B252C;
   color: #FFFFFF;
   text-align: left;
-  padding: 10rem 5rem;
+  padding: 7rem 5rem;
 }
 .device p {
   padding-top: 16px;
@@ -6325,4 +6325,58 @@ nav .toggle {
     width: 40vw;
     height: 19.9rem;
   }
+}
+.pricing-total {
+  width: 43.5rem;
+  height: 46.3rem;
+  padding: 1rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.0509803922);
+  border: 1px solid #D1D3D6;
+  border-radius: 0.2rem;
+}
+.pricing-total h4 {
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
+  text-align: left;
+  font: normal normal 600 2rem/2.5rem Mulish;
+}
+.pricing-total p {
+  padding-bottom: 16px;
+  font: normal normal normal 1.6rem/2.4rem Mulish;
+  letter-spacing: 0px;
+  color: #172026;
+  text-align: left;
+}
+.pricing-total p span {
+  float: right;
+}
+.pricing-total .Primary-brand {
+  font: normal normal bold 1.4rem/1.6rem Mulish;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+  background: #1F39FF 0% 0% no-repeat padding-box;
+  border-radius: 2.8rem;
+  border: none;
+  padding: 1.4rem 8.3rem 1.4rem 8.3rem;
+}
+.pricing-total .ppbtn {
+  padding: 1rem;
+}
+.pricing-total .ppbtn img {
+  width: 244px;
+  height: 38px;
+}
+
+.shippingInform {
+  text-align: left;
+}
+.shippingInform .customer {
+  display: grid;
+  padding-right: 3%;
+}
+.shippingInform .country {
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */

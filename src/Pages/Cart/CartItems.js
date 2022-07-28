@@ -9,6 +9,7 @@ import { shipItem } from '../../Components/Data/data';
 import { handleAction } from '../../redux/counterSlice';
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
+import { NavLink } from 'react-router-dom';
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -143,7 +144,7 @@ const CartItems = () => {
                     <p>Estimated shipping <span>$ 23.28</span></p>
                     <p>Estimated shipping <span>FREE</span></p>
                     <p>Estimated Total <span>$ {totalAmount}</span></p>
-                    <button className='Primary-brand'>CHECKOUT</button>
+                    <NavLink to="/checkout"> <button className='Primary-brand'>CHECKOUT</button></NavLink>
                     <div className='ppbtn'><img src={PPBTN} alt='button' /></div>
 
                 </div>

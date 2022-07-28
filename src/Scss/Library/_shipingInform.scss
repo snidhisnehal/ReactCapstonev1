@@ -1,0 +1,17 @@
+.shippingInform{
+    text-align: left;
+    
+    .customer{
+        display: grid;
+    padding-right: 3%;
+    }
+    .country{
+        width:50%;
+    }
+    h6{
+        @extend .regular-heading-l-20-;
+    }
+    label ,p {
+        @extend .regualr-body-m-16-;
+    }
+}

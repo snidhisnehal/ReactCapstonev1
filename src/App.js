@@ -8,16 +8,20 @@ import Footer from '../src/Components/Footer/mainfooter'
 import SubFooter from '../src/Components/Footer/lowerfooter'
 import SingleProduct from './Pages/ProductDetails/SinglePrduct';
 import CartItems from './Pages/Cart/CartItems';
+import ShippingInform from './Components/CheckOutComp/ShippingInform';
+import Checkout from './Pages/Checkout/Checkout';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      {/* <Checkout/> */}
       <Routes>
         <Route path="/" element={<Home/>} /> 
         <Route path="/product" element={<ProductListing />} /> 
         <Route exact path="/products/:id" element={<SingleProduct />} />
         <Route exact path="/cart" element={<CartItems/>} />  
+        <Route exact path="/checkout" element={<Checkout/>} />  
       </Routes> 
      <Footer/>
      <SubFooter/>

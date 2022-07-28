@@ -1,5 +1,6 @@
 import React from 'react'
 import LeftArrow from '../../Images/chevron-left.svg'
+import Location from '../../Images/map-pin.svg'
 import { NavLink } from 'react-router-dom'
 
 const HeroBanner = () => {
@@ -87,7 +88,9 @@ const HeroBanner = () => {
                            <h5>Conquer your next adventure</h5>
                            <p>Lorem Ipsum Dolor Tempor</p>
                            <button>SHOP DEVICES</button>
-                       </div>
+                      </div>
+                      <div style={{marginLeft:"-25%",borderBottom:"6px solid red",width:"102px"}}><img src={Location} alt='Logo' aria-label='desktop-logo' style={{ width: "50px", height: "50px",marginLeft:"25px",paddingBottom:"10px"}} /></div>
+
                     </div>
                 </div>
             </section>

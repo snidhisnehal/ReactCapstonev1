@@ -1,45 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Card from './Card';
 
 
-const Product = () => {
-    const [data, setData] = useState([]);
-    // const [products, setProducts] = useState([]);
-    const [loading, setloading] =useState(false)
-    const fetchData = () => {
-        setloading(true);
-        fetch("https://fakestoreapi.com/products")
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {
-                setData(data);
-                setloading(false);
-                // setProducts(data);
+const Product = ({data,loading,onfilterChange}) => {
+    // const [data, setData] = useState([]);
+    // // const [products, setProducts] = useState([]);
+    // const [loading, setloading] =useState(false)
+    // const fetchData = () => {
+    //     setloading(true);
+    //     fetch("https://fakestoreapi.com/products")
+    //         .then(response => {
+    //             return response.json()
+    //         })
+    //         .then(data => {
+    //             setData(data);
+    //             setloading(false);
+    //             // setProducts(data);
 
-            })
-        console.log(data)
-    }
+    //         })
+    //     console.log(data)
+    // }
 
    
 
-     useEffect(() => {
-         fetchData()
-     }, [])
+    //  useEffect(() => {
+    //      fetchData()
+    //  }, [])
     
 
-     const [sort,setSort] = useState();
-     const onfilterChange = (filter) => {
-        console.log("onfilter", sort);
-        if (filter) {
-          const result = data.sort((a, b) => a.price - b.price);
-          return setSort(result);     
-        }
-        else {
-          const result = data ;
-          return setSort(result);
-        }
-      }
+    //  const [sort,setSort] = useState();
+    //  const onfilterChange = (filter) => {
+    //     console.log("onfilter", sort);
+    //     if (filter) {
+    //       const result = data.sort((a, b) => a.price - b.price);
+    //       return setSort(result);     
+    //     }
+    //     else {
+    //       const result = data ;
+    //       return setSort(result);
+    //     }
+    //   }
 
       // const filterProduct =(cat)=> {
       //     const updatedList = data.filter((x)=>x.category === cat);
@@ -60,7 +60,7 @@ const Product = () => {
         <p>{data.length}Results</p>
 
        
-        <select value onChange={onfilterChange} >
+        <select value="sort" onChange={onfilterChange} >
           <option>Sort by Latest</option>
           <option value="Lowest">low to high</option>
          

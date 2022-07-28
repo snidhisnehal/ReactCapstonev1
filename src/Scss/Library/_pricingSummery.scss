@@ -1,0 +1,52 @@
+
+    .pricing-total {
+
+        width: 43.5rem;
+        height: 46.3rem;
+        padding: 1rem;
+        background: $--white 0% 0% no-repeat padding-box;
+         box-shadow: 0px 0px .8rem $shadow-gray;
+        border: 1px solid $col-Gray;
+        border-radius: .2rem;
+
+        h4 {
+            padding-top: 3.2rem;
+            padding-bottom: 2.4rem;
+            text-align: left;
+            font: normal normal 600 2rem/2.5rem Mulish;
+        }
+
+        p {
+            padding-bottom: 16px;
+            font: normal normal normal 1.6rem/2.4rem Mulish;
+            letter-spacing: 0px;
+            color: $--unnamed-color-172026;
+            text-align: left;
+
+            span {
+                float: right;
+            }
+        }
+
+        .Primary-brand {
+            font: normal normal bold 1.4rem/1.6rem Mulish;
+            letter-spacing: 0px;
+            color: $--white;
+            text-transform: uppercase;
+            opacity: 1;
+            background: $primary-brand 0% 0% no-repeat padding-box;
+            border-radius: 2.8rem;
+            border: none;
+            padding: 1.4rem 8.3rem 1.4rem 8.3rem;
+        }
+
+        .ppbtn {
+            padding: 1rem;
+
+            img {
+                width: 244px;
+                height: 38px;
+            }
+        }
+
+    }
