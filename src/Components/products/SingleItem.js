@@ -58,7 +58,7 @@ const SingleItem = ({data}) => {
                         <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
                         <p>Clothing / Women’s / Outerwear</p>
                         <SimpleImageSlider
-                            width={400}
+                            width={450}
                             height={550}
                             images={images}
                             showBullets={true}

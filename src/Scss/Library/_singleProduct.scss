@@ -88,8 +88,8 @@
             height: 4rem;
             /* UI Properties */
             background: var(--primary-brand) 0% 0% no-repeat padding-box;
-            background: $primary-brand 0% 0% no-repeat padding-box;
-            border-radius: 2.8rem;
+            background:$--primary-brand 0% 0% no-repeat padding-box;
+            border-radius: 0;
             border: none;
             margin-top: 4rem;
             color: $--white;

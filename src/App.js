@@ -10,6 +10,7 @@ import SingleProduct from './Pages/ProductDetails/SinglePrduct';
 import CartItems from './Pages/Cart/CartItems';
 import ShippingInform from './Components/CheckOutComp/ShippingInform';
 import Checkout from './Pages/Checkout/Checkout';
+import OrderSummery from './Pages/OrderSummery/OrderSummery';
 
 function App() {
   return (
@@ -21,8 +22,10 @@ function App() {
         <Route path="/product" element={<ProductListing />} /> 
         <Route exact path="/products/:id" element={<SingleProduct />} />
         <Route exact path="/cart" element={<CartItems/>} />  
-        <Route exact path="/checkout" element={<Checkout/>} />  
+        <Route exact path="/checkout" element={<Checkout/>} /> 
+        <Route exact path="/Order" element={<OrderSummery/>} />  
       </Routes> 
+      
      <Footer/>
      <SubFooter/>
     </div>

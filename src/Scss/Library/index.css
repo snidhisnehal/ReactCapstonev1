@@ -76,7 +76,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-l-20-, .shippingInform h6, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
+.regular-heading-l-20-, .shippingMethode h6, .shippingInform h6, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -86,7 +86,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-m-16- {
+.regular-heading-m-16-, .shippingDetails h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -116,7 +116,8 @@
   color: var(--unnamed-color-172026);
 }
 
-.regualr-body-m-16-, .shippingInform label, .shippingInform p, .main p, .moreInfo .collection p, .banner-content p {
+.regualr-body-m-16-, .shippingDetails p, .shippingInform label,
+.shippingInform p, .main p, .moreInfo .collection p, .banner-content p {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5376,7 +5377,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-l-20-, .shippingInform h6, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
+.regular-heading-l-20-, .shippingMethode h6, .shippingInform h6, .card .product-details .product-title, .device p, .moreInfo .collection h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5386,7 +5387,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-m-16- {
+.regular-heading-m-16-, .shippingDetails h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5416,7 +5417,8 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regualr-body-m-16-, .shippingInform label, .shippingInform p, .main p, .moreInfo .collection p, .banner-content p {
+.regualr-body-m-16-, .shippingDetails p, .shippingInform label,
+.shippingInform p, .main p, .moreInfo .collection p, .banner-content p {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -6064,8 +6066,8 @@ nav .toggle {
   height: 4rem;
   /* UI Properties */
   background: var(--primary-brand) 0% 0% no-repeat padding-box;
-  background: #1F39FF 0% 0% no-repeat padding-box;
-  border-radius: 2.8rem;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  border-radius: 0;
   border: none;
   margin-top: 4rem;
   color: #FFFFFF;
@@ -6288,15 +6290,21 @@ nav .toggle {
   float: right;
 }
 .cart-Container .pricing-total .Primary-brand {
-  font: normal normal bold 1.4rem/1.6rem Mulish;
+  font: normal normal bold 14px/16px Muli;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: uppercase;
   opacity: 1;
-  background: #1F39FF 0% 0% no-repeat padding-box;
-  border-radius: 2.8rem;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  border-radius: 0px;
   border: none;
-  padding: 1.4rem 8.3rem 1.4rem 8.3rem;
+  width: 247px;
+  height: 40px;
+  padding: 0;
+}
+.cart-Container .pricing-total .Primary-brand img {
+  width: 16px;
+  height: 10px;
 }
 .cart-Container .pricing-total .ppbtn {
   padding: 1rem;
@@ -6328,7 +6336,6 @@ nav .toggle {
 }
 .pricing-total {
   width: 43.5rem;
-  height: 46.3rem;
   padding: 1rem;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 0.8rem rgba(0, 0, 0, 0.0509803922);
@@ -6336,7 +6343,6 @@ nav .toggle {
   border-radius: 0.2rem;
 }
 .pricing-total h4 {
-  padding-top: 3.2rem;
   padding-bottom: 2.4rem;
   text-align: left;
   font: normal normal 600 2rem/2.5rem Mulish;
@@ -6370,13 +6376,220 @@ nav .toggle {
   height: 38px;
 }
 
-.shippingInform {
-  text-align: left;
+.shippingInform select {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  opacity: 1;
+  color: #91959C;
+  padding: 0.5rem;
 }
 .shippingInform .customer {
   display: grid;
   padding-right: 3%;
 }
-.shippingInform .country {
+.shippingInform .customer label {
+  text-align: left;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #181C24;
+  opacity: 1;
+}
+.shippingInform .customer input {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  opacity: 1;
+  color: #91959C;
+  padding: 0.5rem;
+}
+.shippingInform .country select {
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  opacity: 1;
+  color: #91959C;
+  padding: 0.5rem;
+}
+.shippingInform h6 {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  padding: 2rem 0;
+}
+.shippingInform label,
+.shippingInform p {
+  text-align: left;
+  font: normal normal normal 16px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+}
+.shippingInform button {
+  border: 2px solid #D4703D;
+  opacity: 1;
+  width: 347px;
+  height: 40px;
+  margin-top: 5.1rem;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  color: #E26A2C;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+.shippingInform .next {
+  text-align: left;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #72777F;
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #72777F;
+  opacity: 1;
+}
+.shippingInform .shipingMethode {
+  text-align: left;
+}
+.shippingInform .shipingMethode input {
+  border: 2px solid var(--primary-brand);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #E26A2C;
+  opacity: 1;
+}
+.shippingInform .shipingMethode label {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+.shippingInform .shipingMethode .next {
+  text-align: left;
+  padding: 2.4rem 0;
+  border-top: 1px solid #72777F;
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #72777F;
+  opacity: 1;
+}
+.shippingInform .paymentInfo {
+  text-align: left;
+}
+.shippingInform .paymentInfo button {
+  border: 2px solid #D4703D;
+  opacity: 1;
+  width: 347px;
+  height: 40px;
+  margin-top: 5.1rem;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  font: normal normal bold 14px/16px Muli;
+  letter-spacing: 0px;
+  color: #E26A2C;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+}
+.shippingInform .paymentInfo label {
+  text-align: left;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #181C24;
+  opacity: 1;
+}
+.shippingInform .paymentInfo input {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #B5B7BC;
+  border-radius: 8px;
+  opacity: 1;
+  color: #91959C;
+  padding: 0.5rem;
   width: 50%;
+}
+.shippingInform .paymentInfo .next {
+  text-align: left;
+  padding: 1.4rem 0;
+  border-top: 1px solid #72777F;
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #72777F;
+  opacity: 1;
+  margin-top: 3rem;
+}
+
+h2 {
+  text-align: center;
+  font: normal normal 600 48px/45px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  margin-bottom: 1rem;
+  margin-top: 2.9rem;
+}
+
+h3 {
+  text-align: left;
+  font: normal normal 600 36px/30px Source Serif Pro;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  padding-bottom: 2.4rem;
+}
+
+.checkoutBar {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin: auto;
+}
+
+.shippingDetails {
+  text-align: left;
+  border: 1px solid #D1D3D6;
+  border-radius: 2px;
+  opacity: 1;
+  padding: 2.4rem;
+}
+.shippingDetails h6 {
+  color: #172026;
+  padding-bottom: 1.6rem;
+}
+.shippingDetails p {
+  color: #535965;
+}
+.shippingDetails .edit {
+  float: right;
+  padding-right: 3.25rem;
+}
+.shippingDetails .edit p {
+  color: #E26A2C;
+}
+
+.shippingMethode {
+  text-align: left;
+}
+.shippingMethode h6 {
+  text-align: left;
+  font: normal normal 600 20px/25px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
+  padding: 2rem 0;
+}
+.shippingMethode .input input {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #E26A2C;
+  opacity: 1;
+}
+.shippingMethode .input label {
+  color: var(--unnamed-color-172026);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #172026;
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

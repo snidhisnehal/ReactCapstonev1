@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import PricingSummery from './PricingSummery';
 
-const ShippingInform = () => {
+const ShippingInform = ({ acchandler }) => {
+
   const initialValues = { username: "", email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
-  const [show, setIsshow] = useState(true)
+  // const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,15 +16,19 @@ const ShippingInform = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
-    setIsSubmit(true);
-    
+    // setIsSubmit(true);
+    acchandler();
   };
+
+  React.useEffect(() => {
+    localStorage.setItem('form', JSON.stringify(formValues));
+  }, [formValues]);
 
   useEffect(() => {
     console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
-    }
+    // if (Object.keys(formErrors).length === 0 && isSubmit) {
+    //   console.log(formValues);
+    // }
   }, [formErrors]);
   const validate = (values) => {
     const errors = {};
@@ -46,8 +51,11 @@ const ShippingInform = () => {
     return errors;
   };
   return (
-    <> {isSubmit==false && (
-      <div className="aem-Grid aem-Grid--12 shippingInform" style={{border:"1px solid black" , marginBottom:"10px",padding:"10px"}}>
+    <>
+      {/* {isSubmit==false && ( */}
+      <div className="aem-Grid aem-Grid--12 shippingInform" >
+        
+        <div className='aem-GridColumn aem-GridColumn--default--8'>
         <h6>Contact information</h6>
         <p>We’ll use these details to keep you informed on your delivery.</p>
         <form onSubmit={handleSubmit}>
@@ -72,15 +80,21 @@ const ShippingInform = () => {
                 onChange={handleChange} />
             </div>
           </div>
-        </form>
+        </form >
         <h6>1. Shipping Information</h6>
-        <form onSubmit={handleSubmit}>
-          <div className="aem-Grid aem-Grid--12 customer country">
+        <form onSubmit={handleSubmit} >
+          <div className="aem-Grid aem-Grid--12  ">
+            <div className='aem-GridColumn aem-GridColumn--default--6 customer' style={{display:"grid"}}>
             <label for="country">Country</label>
             <select value="select" >
               <option>United States</option>
               <option>India</option>
             </select>
+            </div>
+            <div className='aem-GridColumn aem-GridColumn--default--6'>
+
+            </div>
+            
           </div>
           <div className="aem-Grid aem-Grid--12">
             <div className="aem-GridColumn aem-GridColumn--default--6 customer">
@@ -104,62 +118,69 @@ const ShippingInform = () => {
                 onChange={handleChange} />
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--6 customer">
-              <label>Last Name</label>
-              <input type="textbox"
-                placeholder="LasttName"
-                name="lname"
-                value={formValues.lname}
-                onChange={handleChange} />
-              <label>Street Address 2</label>
-              <input type="textbox"
-                placeholder="Adree2"
-                name="adress2"
-                value={formValues.adress2}
-                onChange={handleChange} />
-              <label>State</label>
-              <div>
-                <select value="select" >
-                  <option>California</option>
-                </select>
-                <label>ZIP</label>
+              <div className='aem-Grid aem-Grid--12' style={{ display: "contents" }}>
+                <label>Last Name</label>
                 <input type="textbox"
-                  placeholder="Zipcode"
-                  name="zip"
-                  value={formValues.zip}
+                  placeholder="LasttName"
+                  name="lname"
+                  value={formValues.lname}
                   onChange={handleChange} />
+              </div>
+              <div className='aem-Grid aem-Grid--12' style={{ display: "contents" }}>
+                <label>Street Address 2</label>
+                <input type="textbox"
+                  placeholder="Adree2"
+                  name="adress2"
+                  value={formValues.adress2}
+                  onChange={handleChange} />
+                
+              </div>
+
+              <div className='aem-Grid aem-Grid--12'  >
+                <div className='aem-GridColumn aem-GridColumn--default--6'>
+                  <label style={{display:"block"}}>State</label>
+                  <select value="select" style={{width: "-webkit-fill-available"}}>
+                    <option>California</option>
+                  </select>
+                  
+                </div>
+                <div className='aem-GridColumn aem-GridColumn--default--6' style={{textAlign:"left"}}>
+                  <label>ZIP</label>
+                  <input type="textbox"
+                    placeholder="Zipcode"
+                    name="zip"
+                    value={formValues.zip}
+                    onChange={handleChange} />
+                  
+                </div>
+
+
               </div>
             </div>
           </div>
-          <button> CONTINUE TO SHIPPING METHOD</button>
-          {/* <button className="fluid ui button blue">Submit</button> */}
-          
-        </form>
-        <div>
-          <h6>Shipping Information</h6>
-          
+          <button type="submit"> CONTINUE TO SHIPPING METHOD</button>
 
-        </div>
+         
+
+
+        </form>
+       
+         <div className='next' style={{borderTop:"1px solid gray"}} > 2. Shipping Method </div>
+          <div className='next' style={{marginBottom:"12.8rem"}}> 3. Payment Information </div>
       </div>
-    )}
-    {
-      isSubmit == true && (
-         <div>
-            <div className='aem-Grid aem-Grid--12' style={{border:"1px solid black" , marginBottom:"10px",padding:"10px"}}>
-              <div className="aem-GridColumn aem-GridColumn--default--6 ">
-                <p>{formValues.email}</p>
-                <p>{formValues.phn}</p>
-              </div>
-              <div className="aem-GridColumn aem-GridColumn--default--6 ">
-              <p>{formValues.name} {formValues.lname}</p>
-              <p>{formValues.adress} {formValues.city} {formValues.zip}</p>
-              <p>{formValues.city}</p>
-              <p>{formValues.zip}</p>
-              </div>
-            </div>
-                 </div> 
-      )
-    }
+      <div className='aem-GridColumn aem-GridColumn--default--4'>
+        <PricingSummery/>
+      </div>
+      </div>
       
+
+      {/* )}
+    {
+      isSubmit == true && ( */}
+
+
+      {/* } */}
+
 
       {/* <div className="container">
 

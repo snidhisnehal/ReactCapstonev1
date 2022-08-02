@@ -164,15 +164,21 @@
         }
 
         .Primary-brand {
-            font: normal normal bold 1.4rem/1.6rem Mulish;
+            font: normal normal bold 14px/16px Muli;
             letter-spacing: 0px;
             color: $--white;
             text-transform: uppercase;
             opacity: 1;
-            background: $primary-brand 0% 0% no-repeat padding-box;
-            border-radius: 2.8rem;
+            background:$--primary-brand 0% 0% no-repeat padding-box;
+            border-radius: 0px;
             border: none;
-            padding: 1.4rem 8.3rem 1.4rem 8.3rem;
+            width: 247px;
+height: 40px;
+            padding: 0;
+            img{
+                width:16px;
+                height:10px;
+            }
         }
 
         .ppbtn {

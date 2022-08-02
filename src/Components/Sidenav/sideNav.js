@@ -1,28 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect,useState } from 'react'
 // import { useParams } from 'react-router-dom';
 
 const SideNav = ({filterProduct}) => {
- // const [data, setData] = useState([]);
+ const [data, setData] = useState([]);
   const [isSelected, setisSelected] = useState(false);
-  // const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
   // const { id } = useParams();
-//   const fetchData = () => {
-//       fetch(`https://fakestoreapi.com/products/categories`)
-//           .then(response => {
-//               return response.json()
-//           })
-//          .then(data => {
-//              setData(data)
-//             //  setProducts(data);
-//           })
-//       console.log(data)
-//   }
+  const fetchData = () => {
+      fetch(`https://fakestoreapi.com/products/categories`)
+          .then(response => {
+              return response.json()
+          })
+         .then(data => {
+             setData(data)
+            //  setProducts(data);
+          })
+      console.log(data)
+  }
 
 
 
-//   useEffect(() => {
-//      fetchData()
-//  }, [])
+  useEffect(() => {
+     fetchData()
+ }, [])
 
 //  const filterProduct =(cat)=> {
 //   const updatedList = data.filter((x)=>x.category === cat);
@@ -37,21 +37,37 @@ const SideNav = ({filterProduct}) => {
       <h6 className='filter'>Filters</h6>
       <hr />
       <h6 className='attr'>Categories</h6>
-      {/* {data.map((category)=>{
+       {/* {data.map((category)=>{
         return(
           <>
-            <label className="filter-container" htmlFor="chk1-label>{category}
-                // <input type="checkbox"  />
+            <label className="filter-container" htmlFor="chk1-label">{category}
                 <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct("jewelery");}} />
+        filterProduct({category});}} />
                 <span className="checkmark"></span>
             </label>
+            
           
           </>
         )
       })
-      } */}
-      <div className='Attribute-first'>
+      }  */}
+      {data.map((category) => {
+                    return (
+                        <>
+                     <div className='Attribute-first' >
+                    <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={() => {
+                        setisSelected(!isSelected);
+                        filterProduct({category})
+                    }} />
+                    <label htmlFor="chk1-label"> {category}</label><br />
+                   
+                </div>
+
+
+                        </>
+                    )
+                })} 
+      {/* <div className='Attribute-first'>
       <h4>Categories</h4>
       
       <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
@@ -67,7 +83,7 @@ const SideNav = ({filterProduct}) => {
         filterProduct("women's clothing")}} />
               <label htmlFor='chk4-label'>Women’s Clothing</label><br />
       
-        </div>
+        </div> */}
       
     </div>
   )

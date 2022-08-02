@@ -10,18 +10,19 @@ import { handleAction } from '../../redux/counterSlice';
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { NavLink } from 'react-router-dom';
-const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 4,
-        slidesToSlide: 3 // optional, default to 1.
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 3,
-        slidesToSlide: 2 // optional, default to 1.
-    }
-}
+import Lock from '../../Images/lock.svg'
+// const responsive = {
+//     desktop: {
+//         breakpoint: { max: 3000, min: 1024 },
+//         items: 4,
+//         slidesToSlide: 3 // optional, default to 1.
+//     },
+//     tablet: {
+//         breakpoint: { max: 1024, min: 464 },
+//         items: 3,
+//         slidesToSlide: 2 // optional, default to 1.
+//     }
+// }
 
 //Shopping Cart
 
@@ -66,7 +67,7 @@ const CartItems = () => {
 
     useEffect(() => {
         fetchData()
-    }, )
+    })
 
 
 
@@ -144,13 +145,13 @@ const CartItems = () => {
                     <p>Estimated shipping <span>$ 23.28</span></p>
                     <p>Estimated shipping <span>FREE</span></p>
                     <p>Estimated Total <span>$ {totalAmount}</span></p>
-                    <NavLink to="/checkout"> <button className='Primary-brand'>CHECKOUT</button></NavLink>
+                    <NavLink to="/checkout"> <button className='Primary-brand'><img src={Lock} alt='lock'/>CHECKOUT</button></NavLink>
                     <div className='ppbtn'><img src={PPBTN} alt='button' /></div>
 
                 </div>
 
             </div>
-            <div className='aem-Grid aem-Grid--12 aem-GridColumn aem-GridColumn--phone--hide aem-GridColumn--tablet--hide'>
+            {/* <div className='aem-Grid aem-Grid--12 aem-GridColumn aem-GridColumn--phone--hide aem-GridColumn--tablet--hide'>
                 <h2 className='carousal'>Recently Viewed</h2>
                 <Carousel
                     swipeable={false}
@@ -177,16 +178,14 @@ const CartItems = () => {
                             <>
                                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn aem-GridColumn--phone--hide carousalCard" >
                                     <img src={product.image} alt="Product" style={{ height: "28vh", width: "13vw" }} />
-                                    {/* {/ <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--7"> /} */}
                                     <h4>{product.title?.split(' ').slice(0, 3).join(' ')}</h4>
                                     <p>${product.price}</p>
-                                    {/* {/ </div> /} */}
                                 </div>
                             </>)
                     })
                     }
                 </Carousel>
-            </div>
+            </div> */}
 
         </div>
     )

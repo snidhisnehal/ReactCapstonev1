@@ -45,7 +45,7 @@ export const counterSlice = createSlice({
 
         state.item = nextCartItems;
       }
-     
+      state.cartTotalAmount -= state.item[itemIndex].price;
       
 
       localStorage.setItem("loc", JSON.stringify(state.item));

@@ -1,0 +1,28 @@
+.shippingDetails {
+    text-align: left;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 2.4rem;
+
+    h6 {
+        @extend .regular-heading-m-16-;
+        color: #172026;
+        padding-bottom: 1.6rem;
+    }
+
+    p {
+        @extend .regualr-body-m-16-;
+        color: #535965;
+    }
+
+    .edit {
+        float: right;
+
+        p {
+            color: $--primary-brand;
+        }
+
+        padding-right: 3.25rem;
+    }
+}
