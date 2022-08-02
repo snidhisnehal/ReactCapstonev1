@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactCapstonev1/static/css/main.81f62796.css",
-    "main.js": "/ReactCapstonev1/static/js/main.e8a03c60.js",
+    "main.css": "/ReactCapstonev1/static/css/main.c1bb53f4.css",
+    "main.js": "/ReactCapstonev1/static/js/main.9ab48c37.js",
     "static/js/787.fec80b04.chunk.js": "/ReactCapstonev1/static/js/787.fec80b04.chunk.js",
     "static/media/banner_fullsize_anim.png": "/ReactCapstonev1/static/media/banner_fullsize_anim.941b3a47a845e8dcda15.png",
     "static/media/mens_outerwear.png": "/ReactCapstonev1/static/media/mens_outerwear.bb7b8afbb76a3bd25233.png",
@@ -24,20 +24,22 @@
     "static/media/shopping-bag.svg": "/ReactCapstonev1/static/media/shopping-bag.b0157b0263004d4fadc2e5c22ab0cf70.svg",
     "static/media/arrow-up.svg": "/ReactCapstonev1/static/media/arrow-up.bffb5a388e9ce654e32b9665d1dbed6d.svg",
     "static/media/map-pin.svg": "/ReactCapstonev1/static/media/map-pin.852024007d574484f01c3346de7dd731.svg",
+    "static/media/lock.svg": "/ReactCapstonev1/static/media/lock.5ff97e2157304c0ee2a0e39c62a6cd5c.svg",
     "static/media/arrow-down.svg": "/ReactCapstonev1/static/media/arrow-down.ad1e372bfba7126beaef93d275515815.svg",
     "static/media/twitter.svg": "/ReactCapstonev1/static/media/twitter.3d9f31115be6b897b5d45c0aad4c1c1f.svg",
     "static/media/heart.svg": "/ReactCapstonev1/static/media/heart.3b35352339d37da7c50b5bcdbc557cd0.svg",
     "static/media/star.svg": "/ReactCapstonev1/static/media/star.55cdb6a54c038786c25f41486284f7d2.svg",
+    "static/media/edit-2 copy.svg": "/ReactCapstonev1/static/media/edit-2 copy.12e2271a633f48bf9d5a315e15e7f525.svg",
     "static/media/edit-2.svg": "/ReactCapstonev1/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/ReactCapstonev1/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "static/media/chevron-down.svg": "/ReactCapstonev1/static/media/chevron-down.fadc45040e456e5cea02f3cd047ee412.svg",
     "static/media/chevron-left.svg": "/ReactCapstonev1/static/media/chevron-left.9df9489142072f06d90f5fec86ae74d0.svg",
-    "main.81f62796.css.map": "/ReactCapstonev1/static/css/main.81f62796.css.map",
-    "main.e8a03c60.js.map": "/ReactCapstonev1/static/js/main.e8a03c60.js.map",
+    "main.c1bb53f4.css.map": "/ReactCapstonev1/static/css/main.c1bb53f4.css.map",
+    "main.9ab48c37.js.map": "/ReactCapstonev1/static/js/main.9ab48c37.js.map",
     "787.fec80b04.chunk.js.map": "/ReactCapstonev1/static/js/787.fec80b04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81f62796.css",
-    "static/js/main.e8a03c60.js"
+    "static/css/main.c1bb53f4.css",
+    "static/js/main.9ab48c37.js"
   ]
 }
