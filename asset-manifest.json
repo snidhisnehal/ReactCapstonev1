@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ReactCapstonev1/static/css/main.8f98f32a.css",
-    "main.js": "/ReactCapstonev1/static/js/main.a1d1a8be.js",
+    "main.css": "/ReactCapstonev1/static/css/main.ad313664.css",
+    "main.js": "/ReactCapstonev1/static/js/main.20fd6fcf.js",
     "static/js/787.fec80b04.chunk.js": "/ReactCapstonev1/static/js/787.fec80b04.chunk.js",
     "static/media/MicrosoftTeams-image (3).png": "/ReactCapstonev1/static/media/MicrosoftTeams-image (3).e381db1c14abfc717006.png",
     "static/media/banner_fullsize_anim.png": "/ReactCapstonev1/static/media/banner_fullsize_anim.941b3a47a845e8dcda15.png",
     "static/media/mens_outerwear.png": "/ReactCapstonev1/static/media/mens_outerwear.bb7b8afbb76a3bd25233.png",
     "static/media/curlyBoy.png": "/ReactCapstonev1/static/media/curlyBoy.896c285b23fa5983f6ab.png",
     "static/media/Ring.png": "/ReactCapstonev1/static/media/Ring.de4ca7e56805900583be.png",
+    "static/media/Muli-Regular.ttf": "/ReactCapstonev1/static/media/Muli-Regular.d08337b78196eb4754a0.ttf",
     "static/media/Jacket.png": "/ReactCapstonev1/static/media/Jacket.9cda7a8b992b0ec6a894.png",
     "static/media/man-stone.png": "/ReactCapstonev1/static/media/man-stone.12f9cc00d34051f481ca.png",
     "static/media/Tshirt.png": "/ReactCapstonev1/static/media/Tshirt.104f2ae89d6979c63ecc.png",
@@ -38,12 +39,12 @@
     "static/media/facebook.svg": "/ReactCapstonev1/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "static/media/chevron-down.svg": "/ReactCapstonev1/static/media/chevron-down.fadc45040e456e5cea02f3cd047ee412.svg",
     "static/media/chevron-left.svg": "/ReactCapstonev1/static/media/chevron-left.9df9489142072f06d90f5fec86ae74d0.svg",
-    "main.8f98f32a.css.map": "/ReactCapstonev1/static/css/main.8f98f32a.css.map",
-    "main.a1d1a8be.js.map": "/ReactCapstonev1/static/js/main.a1d1a8be.js.map",
+    "main.ad313664.css.map": "/ReactCapstonev1/static/css/main.ad313664.css.map",
+    "main.20fd6fcf.js.map": "/ReactCapstonev1/static/js/main.20fd6fcf.js.map",
     "787.fec80b04.chunk.js.map": "/ReactCapstonev1/static/js/787.fec80b04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f98f32a.css",
-    "static/js/main.a1d1a8be.js"
+    "static/css/main.ad313664.css",
+    "static/js/main.20fd6fcf.js"
   ]
 }
