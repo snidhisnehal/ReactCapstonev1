@@ -45,9 +45,55 @@
 
 }
 
+.banner-content-phone {
+    display: none;
+
+    h5 {
+        @extend .display-l-36-;
+        text-align: center;
+        font-weight: 600 // max-width: 44.2rem;
+    }
+
+    p {
+        @extend .regualr-body-m-16-;
+        text-align: center;
+        // max-width: 48.5rem;
+        padding: 0 4.2rem;
+    }
+
+    button {
+        // float: left;
+        background-color: $--primary-brand;
+        color: $--white;
+        padding: .5rem;
+        margin-top: .7rem;
+        width: 18rem;
+        border: .1rem solid $--gray-d3;
+
+    }
+
+    .content-div {
+        // margin: auto;
+        padding-left: 2.5rem;
+        margin-top: -55%;
+    }
+
+    .banner {
+
+        img {
+            width: 100%;
+            height: 100%;
+            // height: 99vh;
+        }
+    }
+
+}
+
 .banner {
+
     img {
         width: 100%;
+        height: 100%;
         // height: 99vh;
     }
 }
@@ -76,10 +122,12 @@
 
         h6 {
             @extend .display-m-24-;
+            padding-left: 1rem;
         }
 
         p {
             @extend .regular-body-s-14-;
+            padding-left: 1rem;
         }
     }
 }
@@ -140,7 +188,8 @@
         }
     }
 }
-
+.adventure{
+    padding-bottom:132px;
 .device {
     background-color: $--rectangle--29;
     color: $--white;
@@ -167,28 +216,81 @@
         width: 180px;
         height: 40px;
     }
-}
 
+    .location {
+        margin-left: -25%;
+        border-bottom: 6px solid #E26A2C;
+        width: 102px;
+        img{
+            width: 50px;
+             height: 50px;
+             margin-left:25px;
+             padding-bottom:10px;
+        }
+    }
+
+}
+}
 @media (max-width: 76.8rem) {
+    .banner-content-phone {
+        display: block;
+    }
+
     .slider .slider-content {
         width: 95vw;
     }
 
-    .moreInfo .collection {
+    .moreInfo {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .collection {
+            text-align: center;
+
+            h6 {
+                max-width: 32.5rem;
+            }
+
+            .btnTwo {
+                margin-top: 24px;
+                margin-left: 0;
+            }
+
+            .btnOne {
+                margin-left: 0px;
+            }
+
+            .bar {
+                margin-left: 32%;
+            }
+
+        }
+    }
+    .adventure{
+        padding-bottom:4rem;
+    .device {
+        max-width: 89vw;
+        /* padding-left: 10px; */
+        margin-left: 24px;
+        margin-top: -10%;
+        height: 40vh;
         text-align: center;
-        h6{
-            max-width: 32.5rem;
-        }
-        .btnTwo {
-            margin-top: 24px;
-             margin-left: 0;
-        }
-        .btnOne{
-             margin-left: 0px;
-        }
-        .bar{
-            margin-left: 32%;
+        h5 {
+            font-size: 3.6rem;
+            font-weight: 600;
+            font-family: Source Serif Pro;
+           margin-bottom: 4rem;
+            span {
+                display: none;
+            }
         }
 
-    }
+        .location {
+            margin-top: -122%;
+            margin-left: -17%;
+            img{
+                margin-left: -.8rem;
+            }
+        }
+    }}
 }

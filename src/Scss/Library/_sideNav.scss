@@ -22,7 +22,7 @@
             font: normal normal 600 1.4rem/2.4rem Mulish;
             letter-spacing: 0px;
             color: $--gray-d2;
-            
+
 
         }
 
@@ -39,7 +39,8 @@
 
     label {
         font-size: 1.6rem;
-        padding-bottom:2.4rem ;
+        padding-bottom: 2.4rem;
+
         span {
             padding: .5rem;
         }
@@ -49,5 +50,18 @@
         padding: 1.7rem 0;
     }
 
+    .category {
+        padding-bottom: 1rem;
+        input {
+            width: 24px;
+            height: 24px;
+        }
+
+        label {
+            font-size: 1.9rem;
+            // padding-bottom: 2.4rem;
+            padding-left: .5rem;
+        }
+    }
 
 }

@@ -13,7 +13,8 @@ h3{
         letter-spacing: 0px;
         color: #172026;
         opacity: 1;
-        padding-bottom: 2.4rem;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
 }
 
  .checkoutBar {
@@ -22,4 +23,10 @@ h3{
     background: #E26A2C 0% 0% no-repeat padding-box;
     opacity: 1;
     margin: auto;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .Checkout h3 {
+        padding-left:  15px;
+    }
 }

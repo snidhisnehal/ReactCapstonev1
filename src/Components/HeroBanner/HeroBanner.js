@@ -9,22 +9,32 @@ const HeroBanner = () => {
             <section>
                 <div className="aem-Grid aem-Grid--12">
 
-                    <div className="aem-GridColumn aem-GridColumn--default--6  aem-GridColumn--phone--12 banner-content">
+                    <div className="aem-GridColumn aem-GridColumn--default--6  aem-GridColumn--phone--hide banner-content">
                         <div className="aem-Grid aem-Grid--12">
                             <div className="aem-GridColumn aem-GridColumn--default--1  aem-GridColumn--phone--12 arrow">
                                 <img src={LeftArrow} alt='Left' aria-label='desktop-logo' />
                             </div>
-                            <div className="aem-GridColumn aem-GridColumn--default--11 content-div">
+                            <div className="aem-GridColumn aem-GridColumn--default--11 aem-GridColumn--phone--hide content-div">
                                 <h5>Shop the new Signature Collection</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
                                 <NavLink to='/product'><button> SHOP NOW </button></NavLink>
                             </div>
                         </div>
                     </div>
-                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 banner">
+                    <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--hide banner">
                         {/* <img src={BoysStyle} alt='Boys' style={{}} /> */}
                         <img src={require('../../Images/banner_fullsize_anim.png')} alt='Logo' aria-label='desktop-logo' />
                     </div>
+                </div>
+                <div className="aem-Grid aem-Grid--12  banner-content-phone">
+                <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 banner">
+                <img src={require('../../Images/images/MicrosoftTeams-image (3).png')} alt='Logo' aria-label='desktop-logo' st/>
+                </div>
+                <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 content-div ">
+                                <h5>Shop the new Signature Collection</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                <NavLink to='/product'><button> SHOP NOW </button></NavLink>
+                            </div>
                 </div>
                 <NavLink to='/product'>
                 <div className='container slider'>
@@ -78,18 +88,18 @@ const HeroBanner = () => {
                     </div>
                 </div>
             </section>
-            <section style={{paddingBottom:"132px"}}>
+            <section style={{}} className="adventure">
                 <div className="aem-Grid aem-Grid--12 container">
                     <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
                        <img src={require('../../Images/man-stone.png')} alt='Logo' aria-label='desktop-logo' style={{ width: "100%", height: "433px",padding:"2% 0"}} />
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 device">
                        <div>
-                           <h5>Conquer your next adventure</h5>
+                           <h5>Conquer your <span>next adventure</span></h5>
                            <p>Lorem Ipsum Dolor Tempor</p>
                            <button>SHOP DEVICES</button>
                       </div>
-                      <div style={{marginLeft:"-25%",borderBottom:"6px solid red",width:"102px"}}><img src={Location} alt='Logo' aria-label='desktop-logo' style={{ width: "50px", height: "50px",marginLeft:"25px",paddingBottom:"10px"}} /></div>
+                      <div  className="location"><img src={Location} alt='Logo' aria-label='desktop-logo'  /></div>
 
                     </div>
                 </div>

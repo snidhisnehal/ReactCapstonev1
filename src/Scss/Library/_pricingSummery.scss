@@ -1,7 +1,7 @@
 
     .pricing-total {
 
-        width: 43.5rem;
+        // width: 43.5rem;
         // height: 46.3rem;
         padding: 1rem;
         background: $--white 0% 0% no-repeat padding-box;
@@ -47,6 +47,13 @@
                 width: 244px;
                 height: 38px;
             }
+        }
+
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .pricing-total {
+            margin-bottom: 2rem;
         }
 
     }

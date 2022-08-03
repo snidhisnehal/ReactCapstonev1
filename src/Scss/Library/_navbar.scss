@@ -5,7 +5,7 @@ nav {
     top: 0;
     position: sticky;
     place-items: center;
-    padding-bottom: 1.6rem;
+    // padding-bottom: 1.6rem;
     z-index: 1;
     background-color: $--primary-brand;
     // border-bottom: .2rem solid $gray-l1;
@@ -26,6 +26,7 @@ nav {
 
     ul {
         text-align: right;
+
     }
 
     ul li {
@@ -104,6 +105,11 @@ nav {
         display: block;
     }
 
+    nav ul li .counter {
+        margin-top: -4%;
+        margin-left: -7%;
+    }
+
     .sign-in ul li {
         span {
             display: none;
@@ -114,6 +120,11 @@ nav {
 
     nav ul li .img-2 {
         display: none !important
+    }
+
+    nav ul li .img-3 {
+        width: 2.2rem;
+        height: 2.4rem;
     }
 
     .main-menu {

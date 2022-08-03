@@ -62,6 +62,7 @@ export default function Card({ data }) {
       })}
      
       <div className='aem-Grid aem-Grid--12 pagination'>
+        <div className='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12'>
         <Pagination
           activePage={page}
           itemsCountPerPage={9}
@@ -69,6 +70,7 @@ export default function Card({ data }) {
           pageRangeDisplayed={5}
           onChange={paginate}
         />
+        </div>
       </div>
     </>
   )

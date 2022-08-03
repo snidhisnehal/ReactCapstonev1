@@ -53,13 +53,13 @@ const ShippingMethod = ({ acc1handler }) => {
   };
   return (
     <>
-      <div  className="aem-Grid aem-Grid--12" >
-        <div className="aem-GridColumn aem-GridColumn--default--8">
+      <div  className="aem-Grid aem-Grid--12 Shipping" >
+        <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
           
           <ShippinginfoDetails />
           {/* {isSubmit == false && ( */}
           <form onSubmit={handleSubmit}>
-            <div className='className="aem-Grid aem-Grid--12 shippingInform '  >
+            <div className='aem-Grid aem-Grid--12 shippingInform '  >
               <h6>2. Shipping Method</h6>
               <div className='shipingMethode'>
               <input type="radio" id="html" name="html" value="Standard Shipping (4-8 business days via USPS) FREE" defaultChecked={ischecked === "Standard Shipping (4-8 business days via USPS) FREE"}
@@ -75,7 +75,7 @@ const ShippingMethod = ({ acc1handler }) => {
                 onClick={(e) => setIsChecked(e.target.value)} />
               <label for="javascript">Next Day Delivery (Next business days via FedEx) $53.61</label><br />
               </div>
-              <button type='submit'> CONTINUE TO PAYMENT </button>
+              <button type='submit'> <span className='desktop'>CONTINUE TO PAYMENT</span><span className='mobile'>CONTINUE</span> </button>
               <div className='next' style={{marginBottom:"12.8rem" ,borderTop:"1px solid gray"}}> 3. Payment Information </div>
             </div>
             
@@ -93,7 +93,7 @@ const ShippingMethod = ({ acc1handler }) => {
           {/* } */}
         </div>
         
-        <div className="aem-GridColumn aem-GridColumn--default--4">
+        <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn--phone--12">
           <PricingSummery />
         </div>
       </div>

@@ -16,6 +16,23 @@
     //     color: #172026;
     //     opacity: 1;
     // }
+    .sign-in{
+        border:1px solid $col-Gray;
+        // width: 438px;
+        height:100px;
+        display:inline-flex;
+        padding: 13px;
+        margin-bottom: 2.4rem;
+        h4{
+         @extend .regular-heading-l-20- ;
+         text-align: left;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            margin-top: 5%;
+        }
+    }
 
     .customer {
         display: grid;
@@ -84,7 +101,16 @@
         color: #E26A2C;
         text-transform: uppercase;
         background-color: #FFFFFF;
+        
     }
+//    form button span{
+//         .mobile{
+//             display:none
+//         }
+//         .desktop{
+//             display:block
+//         }
+//     } 
 
     .next {
         text-align: left;
@@ -145,6 +171,7 @@
             color: #E26A2C;
             text-transform: uppercase;
             background-color: #FFFFFF;
+            
         }
         
         label {
@@ -177,5 +204,35 @@
             margin-top: 3rem;
         }
          
+    }
+    button {
+        .mobile{
+                        display:none
+                    }
+                    .desktop{
+                        display:block
+                    }
+    }
+}
+ 
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .shippingInform {
+        padding: 0 15px;
+    }
+    .shippingInform button {
+        .mobile{
+                        display:block;
+                    }
+                    .desktop{
+                        display:none;
+                    }
+    }
+    .Shipping{
+        padding: 0 1.5rem;
+    }
+    .shippingInform .paymentInfo input{
+        width: -webkit-fill-available;
     }
 }

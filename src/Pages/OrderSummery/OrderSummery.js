@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
-import PaymentInfo from '../../Components/CheckOutComp/PaymentInfo';
-import PaymentinfoDetails from '../../Components/CheckOutComp/PaymentinfoDetails';
-import ShipingmethodDetails from '../../Components/CheckOutComp/ShipingmethodDetails';
-import ShippinginfoDetails from '../../Components/CheckOutComp/shippinginfoDetails';
-import ShippingInform from '../../Components/CheckOutComp/ShippingInform';
-import ShippingMethod from '../../Components/CheckOutComp/ShippingMethod';
-
+import Instagram from '../../Images/instagram copy.svg';
+import Face from '../../Images/facebook copy.svg';
+import Twitt from '../../Images/twitter copy.svg';
 const OrderSummery = () => {
     // const [ischecked, setIsChecked] = useState(" ");
     const cartData = useSelector((value) =>
@@ -20,11 +16,11 @@ const OrderSummery = () => {
         <>
             <h1>Order Successful!</h1>
             <div className="aem-Grid aem-Grid--12 container">
-                <div className="aem-GridColumn aem-GridColumn--default--8 shippingInform">
+                <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 shippingInform">
 
                     <h6>Order Number #1700834</h6>
                     <div className="aem-Grid aem-Grid--12 " >
-                        <div className="aem-GridColumn aem-GridColumn--default--6">
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                             {/* <ShippinginfoDetails /> */}
                             <h6>Shipping Information</h6>
                             <div>
@@ -38,7 +34,7 @@ const OrderSummery = () => {
                                 <p>{localdata.zip}</p>
                             </div>
                         </div>
-                        <div className="aem-GridColumn aem-GridColumn--default--6">
+                        <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                             {/* <ShipingmethodDetails /> */}
 
                             {/* <PaymentinfoDetails /> */}
@@ -60,7 +56,7 @@ const OrderSummery = () => {
                             return (
                                 <>
 
-                                    <div className='aem-GridColumn aem-GridColumn--default--6  aem-Grid--phone--12'>
+                                    <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 aem-Grid--phone--12'>
 
                                         <div className='aem-Grid aem-Grid--12  aem-Grid--phone--12' >
                                             <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6 added-product'>
@@ -88,9 +84,12 @@ const OrderSummery = () => {
                     <p>You will also receive an email with the details and we will let you know when your order has shipped.</p><br/><br/>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. For assistance call Support at 1-800-867-5309, M - F, 9am - 8pm EST.</p><br/><br/><br/><br/>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--4">
-                    <div style={{ backgroundColor: "#FF8243",color:"white" ,width:"440px",height:"351px"}}>
+                <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn--phone--12 offer" >
+                    <div>
                         <h5>Give us a follow to SAVE 20% on your next order.</h5>
+                        <div style={{marginTop:"40.3px", padding:"30px"}}><img src={Instagram} alt="Instagram" style={{width:"49px",height:"49px",padding:"5px"}}/> &nbsp; &nbsp; &nbsp;
+                        <img src={Face} alt="facebook" style={{width:"49px",height:"49px",padding:"5px"}}/> &nbsp; &nbsp; &nbsp;
+                        <img src={Twitt} alt="Twitter" style={{width:"49px",height:"49px",padding:"5px"}}/></div>
                     </div>
                 </div>
             </div>

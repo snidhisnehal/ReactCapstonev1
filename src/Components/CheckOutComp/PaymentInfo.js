@@ -57,7 +57,7 @@ const PaymentInfo = ({ acc2handler }) => {
   return (
     <>
       <div className="aem-Grid aem-Grid--12 shippingInform">
-        <div className='aem-GridColumn aem-GridColumn--default--8'>
+        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12'>
           <ShippinginfoDetails />
           <ShipingmethodDetails />
 
@@ -65,7 +65,7 @@ const PaymentInfo = ({ acc2handler }) => {
           <div className="aem-Grid aem-Grid--12">
 
             <form onSubmit={handleSubmit} >
-              <div className='aem-GridColumn aem-GridColumn--default--6 paymentInfo' >
+              <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 paymentInfo' >
                 <h6>3. Payment Information</h6>
                 <input type="radio" id="html" name="html" value="Credit Card" defaultChecked={ischecked === "Credit Card"}
                   onClick={(e) => setIsChecked(e.target.value)} style={{width:"3%"}}/>
@@ -88,9 +88,9 @@ const PaymentInfo = ({ acc2handler }) => {
                 <label>PayPal</label>
                 </div><br />
               </div>
-              <div className='aem-GridColumn aem-GridColumn--default--6' ></div>
+              <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12' ></div>
 
-              <button type='submit'>CONTINUE TO REVIEW ORDER</button>
+              <button type='submit'><span className='desktop'>CONTINUE TO REVIEW ORDER</span><span className='mobile'>CONTINUE</span></button>
 
             </form>
 
@@ -108,7 +108,7 @@ const PaymentInfo = ({ acc2handler }) => {
           {/* } */}
 
         </div>
-        <div className='aem-GridColumn aem-GridColumn--default--4'>
+        <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12'>
           <PricingSummery />
         </div>
       </div>

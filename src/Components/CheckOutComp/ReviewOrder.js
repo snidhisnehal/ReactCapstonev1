@@ -14,7 +14,7 @@ const ReviewOrder = () => {
     return (
         <>
             <div className='aem-Grid aem-Grid--12  aem-Grid--phone--12'>
-                <div className='aem-GridColumn aem-GridColumn--default--8 shippingInform'>
+                <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 shippingInform'>
                     <ShippinginfoDetails />
                     <ShipingmethodDetails />
                     <PaymentinfoDetails />
@@ -24,14 +24,14 @@ const ReviewOrder = () => {
                             return (
                                 <>
 
-                                    <div className='aem-GridColumn aem-GridColumn--default--6  aem-Grid--phone--12'>
+                                    <div className='aem-GridColumn aem-GridColumn--default--6  aem-GridColumn--phone--12'>
 
                                         <div className='aem-Grid aem-Grid--12  aem-Grid--phone--12' >
-                                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--3 added-product'>
+                                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6 added-product'>
 
                                                 <img src={value.image} alt='product' style={{ width: "100px", height: "120px" }} />
                                             </div>
-                                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--9 ' style={{textAlign:"left"}}>
+                                            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6 ' style={{textAlign:"left"}}>
 
                                                 <b>{value.title?.split(' ').slice(0, 3).join(' ')}</b>
                                                 <p>size: medium</p> 
@@ -49,7 +49,7 @@ const ReviewOrder = () => {
                     <NavLink to="/Order"><button style={{backgroundColor:" #E26A2C",color:"white",marginBottom:"2.4rem"}}>Place Order</button></NavLink>
                     <p style={{textAlign:"center",paddingBottom:"128px"}}>By clicking confirm order you agree to our <b style={{textDecoration:"underline"}}>Terms and Conditions</b></p>
                 </div>
-                <div className='aem-GridColumn aem-GridColumn--default--4'>
+                <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12'>
                     <PricingSummery />
                 </div>
             </div>

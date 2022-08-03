@@ -6,7 +6,7 @@
     background-color: $--rectangle--29;
     color: $--white;
     justify-content: center;
-    padding: 9.5rem;
+    padding: 9.5rem 3rem;
     display:flex;
     flex-direction: column;
     height:35.2rem;
@@ -16,7 +16,7 @@
 
 }
 .subheader {
-    visibility: hidden;
+    visibility: visible;
     @extend .display-xl-48-dekstop-only;
 
 }

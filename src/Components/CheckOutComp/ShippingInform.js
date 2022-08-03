@@ -55,12 +55,12 @@ const ShippingInform = ({ acchandler }) => {
       {/* {isSubmit==false && ( */}
       <div className="aem-Grid aem-Grid--12 shippingInform" >
         
-        <div className='aem-GridColumn aem-GridColumn--default--8'>
+        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12'>
         <h6>Contact information</h6>
         <p>We’ll use these details to keep you informed on your delivery.</p>
         <form onSubmit={handleSubmit}>
           <div className="aem-Grid aem-Grid--12">
-            <div className="aem-GridColumn aem-GridColumn--default--6 customer">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
               <label for="email">Email</label>
               <input
                 type="text"
@@ -70,7 +70,7 @@ const ShippingInform = ({ acchandler }) => {
                 onChange={handleChange}
               />
             </div>
-            <div className="aem-GridColumn aem-GridColumn--default--6 customer">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
               <label for="phn">Phone Number</label>
               <input type="text"
                 id="phn"
@@ -84,20 +84,20 @@ const ShippingInform = ({ acchandler }) => {
         <h6>1. Shipping Information</h6>
         <form onSubmit={handleSubmit} >
           <div className="aem-Grid aem-Grid--12  ">
-            <div className='aem-GridColumn aem-GridColumn--default--6 customer' style={{display:"grid"}}>
+            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer' style={{display:"grid"}}>
             <label for="country">Country</label>
             <select value="select" >
               <option>United States</option>
               <option>India</option>
             </select>
             </div>
-            <div className='aem-GridColumn aem-GridColumn--default--6'>
+            <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
 
             </div>
             
           </div>
           <div className="aem-Grid aem-Grid--12">
-            <div className="aem-GridColumn aem-GridColumn--default--6 customer">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
               <label>First Name</label>
               <input type="textbox"
                 placeholder="FirstName"
@@ -117,7 +117,7 @@ const ShippingInform = ({ acchandler }) => {
                 value={formValues.city}
                 onChange={handleChange} />
             </div>
-            <div className="aem-GridColumn aem-GridColumn--default--6 customer">
+            <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
               <div className='aem-Grid aem-Grid--12' style={{ display: "contents" }}>
                 <label>Last Name</label>
                 <input type="textbox"
@@ -137,20 +137,21 @@ const ShippingInform = ({ acchandler }) => {
               </div>
 
               <div className='aem-Grid aem-Grid--12'  >
-                <div className='aem-GridColumn aem-GridColumn--default--6'>
+                <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
                   <label style={{display:"block"}}>State</label>
                   <select value="select" style={{width: "-webkit-fill-available"}}>
                     <option>California</option>
                   </select>
                   
                 </div>
-                <div className='aem-GridColumn aem-GridColumn--default--6' style={{textAlign:"left"}}>
-                  <label>ZIP</label>
+                 
+                <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12' style={{textAlign:"left"}}>
+                  <label style={{display:"block"}}>ZIP</label>
                   <input type="textbox"
                     placeholder="Zipcode"
                     name="zip"
                     value={formValues.zip}
-                    onChange={handleChange} />
+                    onChange={handleChange} style={{width: "-webkit-fill-available"}} />
                   
                 </div>
 
@@ -158,7 +159,7 @@ const ShippingInform = ({ acchandler }) => {
               </div>
             </div>
           </div>
-          <button type="submit"> CONTINUE TO SHIPPING METHOD</button>
+          <button type="submit"> <span className='desktop'>CONTINUE TO SHIPPING METHOD</span><span className='mobile'>CONTINUE</span></button>
 
          
 
@@ -168,7 +169,16 @@ const ShippingInform = ({ acchandler }) => {
          <div className='next' style={{borderTop:"1px solid gray"}} > 2. Shipping Method </div>
           <div className='next' style={{marginBottom:"12.8rem"}}> 3. Payment Information </div>
       </div>
-      <div className='aem-GridColumn aem-GridColumn--default--4'>
+      <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12'>
+        <div className="aem-Grid aem-Grid--12 sign-in">
+          <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
+          <h4>Sign in for Express Checkout</h4>
+          </div>
+          <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
+            <button>SIGN IN</button>
+          </div>
+          
+        </div>
         <PricingSummery/>
       </div>
       </div>

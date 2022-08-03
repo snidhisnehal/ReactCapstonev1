@@ -54,8 +54,8 @@ const SideNav = ({filterProduct}) => {
       {data.map((category) => {
                     return (
                         <>
-                     <div className='Attribute-first' >
-                    <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={() => {
+                     <div className='category' >
+                    <input type="checkbox" id='chk1-label'  aria-label="checkbox" onClick={() => {
                         setisSelected(!isSelected);
                         filterProduct({category})
                     }} />

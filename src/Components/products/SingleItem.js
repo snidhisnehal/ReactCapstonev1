@@ -43,22 +43,23 @@ const SingleItem = ({data}) => {
                 <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12'>
                     <div className="aem-Grid aem-Grid--12 aem-Grid--phone--12" >
                         <div className='aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--hide single'>
-                            <img src={data.image} alt="product" />
+                            <img src={data.image} alt="product" style={{borderBottom:"4px solid #E26A2C"}}/>
                             <img src={data.image} alt="product " />
                             <img src={data.image} alt="product " />
                             <img src={data.image} alt="product " />
                             <img src={data.image} alt="product" />
                             <img src={Down} alt="carousal-down" className='down' />
                         </div>
-                        {/* <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
+                        <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--hide full-image'>
                             <p>Clothing / Women’s / Outerwear</p>
                             <img src={data.image} alt="Product" />
-                        </div> */}
+                            
+                        </div>
                         {/* <div className="aem-Grid aem-Grid--12 aem-GridColumn--default--hide aem-Grid--phone--12"> */}
-                        <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image'>
+                        <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image2'>
                         <p>Clothing / Women’s / Outerwear</p>
                         <SimpleImageSlider
-                            width={450}
+                            width={350}
                             height={550}
                             images={images}
                             showBullets={true}
@@ -82,21 +83,7 @@ const SingleItem = ({data}) => {
                     <p>{data.description}</p>
                     <hr />
                     <div className='color'>
-                        <h6>Color</h6>
-                        <div className='img-color'>
-                            <span><img src={Swatch01} alt="Color" className='image1' /></span>
-                            <span><img src={Swatch02} alt="color" className='image2' /></span>
-                            <span><img src={Swatch03} alt="color" className='image3' /></span>
-                            <span><img src={Swatch04} alt="color " className='image4' /></span>
-                        </div>
-                        <h6>Size</h6>
-                        <div className='size'>
-                            <span><button type='button'>XS</button></span>
-                            <span><button type='button'>S</button></span>
-                            <span><button type='button'>M</button></span>
-                            <span><button type='button'>L</button></span>
-                            <span><button type='button'>XL</button></span>
-                        </div>
+                        
                         <h6>Quantity</h6>
                         <div className='add-sub'>
                             <IncDecCount/> 
@@ -120,6 +107,7 @@ const SingleItem = ({data}) => {
                     <div className="aem-Grid aem-Grid--12">
                         <h6>Description</h6>
                         <p className='descrition'>{data.description}</p>
+                        <div className='bar'></div>
                     </div>
                 </div>
                 {/* <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
