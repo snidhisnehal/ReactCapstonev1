@@ -51,6 +51,7 @@ $shadow-gray:#0000000D;
 --unnamed-line-spacing-17-5: 17.5px;
 }
 
+
 /* Character Styles */
 .display-xl-48-dekstop-only {
     font-family: var(--unnamed-font-family-source-serif-pro);
@@ -168,3 +169,7 @@ $shadow-gray:#0000000D;
     line-height: var(--unnamed-line-spacing-32);
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--gray-d2);}
+
+    .pr-32{
+        padding-right: 32px;
+      }

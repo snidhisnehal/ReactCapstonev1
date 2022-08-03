@@ -57,7 +57,7 @@ const PaymentInfo = ({ acc2handler }) => {
   return (
     <>
       <div className="aem-Grid aem-Grid--12 shippingInform">
-        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12'>
+        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 pr-32'>
           <ShippinginfoDetails />
           <ShipingmethodDetails />
 

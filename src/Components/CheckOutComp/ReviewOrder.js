@@ -13,8 +13,8 @@ const ReviewOrder = () => {
 
     return (
         <>
-            <div className='aem-Grid aem-Grid--12  aem-Grid--phone--12'>
-                <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 shippingInform'>
+            <div className='aem-Grid aem-Grid--12  aem-Grid--phone--12'> 
+                <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 shippingInform pr-32'>
                     <ShippinginfoDetails />
                     <ShipingmethodDetails />
                     <PaymentinfoDetails />

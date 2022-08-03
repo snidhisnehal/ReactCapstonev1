@@ -26,7 +26,7 @@
 }
 
 /* Character Styles */
-.display-xl-48-dekstop-only, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
+.display-xl-48-dekstop-only, h2, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -36,7 +36,7 @@
   color: var(#172026);
 }
 
-.display-l-36-, .offer h5, .banner-content-phone h5 {
+.display-l-36-, .offer h5, h3, .banner-content-phone h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -155,6 +155,10 @@
   line-height: var(--unnamed-line-spacing-32);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--gray-d2);
+}
+
+.pr-32 {
+  padding-right: 32px;
 }
 
 .aem-Grid {
@@ -5327,7 +5331,7 @@ hr {
 }
 
 /* Character Styles */
-.display-xl-48-dekstop-only, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
+.display-xl-48-dekstop-only, h2, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5337,7 +5341,7 @@ hr {
   color: var(#172026);
 }
 
-.display-l-36-, .offer h5, .banner-content-phone h5 {
+.display-l-36-, .offer h5, h3, .banner-content-phone h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5456,6 +5460,10 @@ hr {
   line-height: var(--unnamed-line-spacing-32);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--gray-d2);
+}
+
+.pr-32 {
+  padding-right: 32px;
 }
 
 nav {
@@ -5697,7 +5705,7 @@ nav .toggle {
 }
 .slider img {
   width: 100%;
-  height: 50vh;
+  height: 223px;
 }
 .slider .slider-content {
   background-color: rgba(27, 37, 44, 0.8509803922);
@@ -6138,8 +6146,7 @@ nav .toggle {
 .full-image img {
   width: 100%;
   height: 68rem;
-  padding-right: 3.3rem;
-  padding-top: 1rem;
+  padding: 0 6.5rem;
 }
 
 .detail-info {
@@ -6690,7 +6697,6 @@ nav .toggle {
 }
 h2 {
   text-align: center;
-  font: normal normal 600 48px/45px Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
   opacity: 1;
@@ -6700,7 +6706,6 @@ h2 {
 
 h3 {
   text-align: left;
-  font: normal normal 600 36px/30px Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
   opacity: 1;
@@ -6785,4 +6790,8 @@ h3 {
   .offer {
     display: none;
   }
+}
+@font-face {
+  font-family: Muli;
+  src: url(../Library/Muli-Regular.ttf);
 }/*# sourceMappingURL=index.css.map */

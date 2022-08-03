@@ -55,7 +55,7 @@ const ShippingInform = ({ acchandler }) => {
       {/* {isSubmit==false && ( */}
       <div className="aem-Grid aem-Grid--12 shippingInform" >
         
-        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12'>
+        <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 pr-32' >
         <h6>Contact information</h6>
         <p>We’ll use these details to keep you informed on your delivery.</p>
         <form onSubmit={handleSubmit}>
