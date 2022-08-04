@@ -28,7 +28,7 @@ const Navbar = () => {
                     </a>
                     <NavLink to='/' style={{ textDecoration: "none" }}>
                       {/* <img src={prop.Logo} alt="Logo" className='logo' /> */}
-                      <h1 className='logo'>VENIA</h1>
+                      <h4 className='logo'>VENIA</h4>
                     </NavLink>
                   </div>
                   <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--hide main-menu">

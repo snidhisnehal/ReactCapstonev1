@@ -2,6 +2,7 @@ import React from 'react'
 import LeftArrow from '../../Images/chevron-left.svg'
 import Location from '../../Images/map-pin.svg'
 import { NavLink } from 'react-router-dom'
+import BoysStyle from '../../Images/images/MicrosoftTeams-image (3).png'
 
 const HeroBanner = () => {
     return (
@@ -22,8 +23,8 @@ const HeroBanner = () => {
                         </div>
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--hide banner">
-                        {/* <img src={BoysStyle} alt='Boys' style={{}} /> */}
-                        <img src={require('../../Images/banner_fullsize_anim.png')} alt='Logo' aria-label='desktop-logo' />
+                        <img src={BoysStyle} alt='Boys' />
+                        {/* <img src={require('../../Images/banner_fullsize_anim.png')} alt='Logo' aria-label='desktop-logo' /> */}
                     </div>
                 </div>
                 <div className="aem-Grid aem-Grid--12  banner-content-phone">

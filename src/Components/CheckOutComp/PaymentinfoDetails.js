@@ -10,10 +10,10 @@ const PaymentinfoDetails = () => {
       <div className="aem-GridColumn aem-GridColumn--default--9">
       <h6>PaymentInfo</h6>
         <p>{paymentmethode}</p>
-        <p>visa ending in {paymentdata.date} </p>
+        <p>visa ending in {paymentdata.number} </p>
       </div>
       <div className="aem-GridColumn aem-GridColumn--default--3">
-        <div style={{display:"inline-flex" }} className="edit"><img src={Edit} alt="Edit"/><p>Edit</p></div>
+        <div style={{display:"inline-flex" }} className="edit"><img src={Edit} alt="Edit"/>&nbsp;&nbsp;<p>Edit</p></div>
         </div>
     </div>
   )

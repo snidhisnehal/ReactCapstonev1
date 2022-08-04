@@ -26,7 +26,7 @@
 }
 
 /* Character Styles */
-.display-xl-48-dekstop-only, h2, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
+.display-xl-48-dekstop-only, h1, h2, .cart-Container h1, .cart-Container .carousal, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -36,7 +36,7 @@
   color: var(#172026);
 }
 
-.display-l-36-, .offer h5, h3, .banner-content-phone h5 {
+.display-l-36-, .offer h5, h3, .description-product h3, .banner-content-phone h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -76,7 +76,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-l-20-, .shippingMethode h6, .shippingInform h6, .shippingInform .sign-in h4, .card .product-details .product-title, .adventure .device p, .moreInfo .collection h6 {
+.regular-heading-l-20-, .shippingMethode h6, .shippingInform h6, .shippingInform .sign-in h4, .pricing-total h4, .cart-Container .pricing-total h4, .description-product h6, .detail-info .color h6, .card .product-details .product-title, .adventure .device p, .moreInfo .collection h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -86,7 +86,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-m-16-, .shippingDetails h6 {
+.regular-heading-m-16-, .shippingDetails h6, .shippingInform .customer label, .description-product ul li, .detail-info .color .like-share, .main-footer .foot-head {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -96,7 +96,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-s-14- {
+.regular-heading-s-14-, .shippingInform button, .pricing-total .Primary-brand, .cart-Container .pricing-total .Primary-brand, .cart-Container .option {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -106,7 +106,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-body-l-20- {
+.regular-body-l-20-, .cart-Container .shipping p, .cart-Container .cart-products .cart-prod-detail b {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -117,7 +117,7 @@
 }
 
 .regualr-body-m-16-, .shippingDetails p, .shippingInform label,
-.shippingInform p, .main p, .moreInfo .collection p, .banner-content-phone p, .banner-content p {
+.shippingInform p, .pricing-total p, .cart-Container .pricing-total p, .cart-Container .cart-products .cart-prod-detail p, .description-product p, .main p, .filter-body p, .card .product-details .product-price, .moreInfo .collection p, .banner-content-phone p, .banner-content p {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -127,7 +127,7 @@
   color: var(--unnamed-color-172026);
 }
 
-.regular-body-s-14-, .slider .slider-content p {
+.regular-body-s-14-, .cart-Container .shipping p span, .slider .slider-content p, .sub-footer .info {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5331,7 +5331,7 @@ hr {
 }
 
 /* Character Styles */
-.display-xl-48-dekstop-only, h2, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
+.display-xl-48-dekstop-only, h1, h2, .cart-Container h1, .cart-Container .carousal, .header .hero-container .subheader, .header .hero-container h1, .adventure .device h5, .moreInfo .collection h5, .banner-content h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5341,7 +5341,7 @@ hr {
   color: var(#172026);
 }
 
-.display-l-36-, .offer h5, h3, .banner-content-phone h5 {
+.display-l-36-, .offer h5, h3, .description-product h3, .banner-content-phone h5 {
   font-family: var(--unnamed-font-family-source-serif-pro);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5381,7 +5381,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-l-20-, .shippingMethode h6, .shippingInform h6, .shippingInform .sign-in h4, .card .product-details .product-title, .adventure .device p, .moreInfo .collection h6 {
+.regular-heading-l-20-, .shippingMethode h6, .shippingInform h6, .shippingInform .sign-in h4, .pricing-total h4, .cart-Container .pricing-total h4, .description-product h6, .detail-info .color h6, .card .product-details .product-title, .adventure .device p, .moreInfo .collection h6 {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5391,7 +5391,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-m-16-, .shippingDetails h6 {
+.regular-heading-m-16-, .shippingDetails h6, .shippingInform .customer label, .description-product ul li, .detail-info .color .like-share, .main-footer .foot-head {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-600);
@@ -5401,7 +5401,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-heading-s-14- {
+.regular-heading-s-14-, .shippingInform button, .pricing-total .Primary-brand, .cart-Container .pricing-total .Primary-brand, .cart-Container .option {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-bold);
@@ -5411,7 +5411,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-body-l-20- {
+.regular-body-l-20-, .cart-Container .shipping p, .cart-Container .cart-products .cart-prod-detail b {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5422,7 +5422,7 @@ hr {
 }
 
 .regualr-body-m-16-, .shippingDetails p, .shippingInform label,
-.shippingInform p, .main p, .moreInfo .collection p, .banner-content-phone p, .banner-content p {
+.shippingInform p, .pricing-total p, .cart-Container .pricing-total p, .cart-Container .cart-products .cart-prod-detail p, .description-product p, .main p, .filter-body p, .card .product-details .product-price, .moreInfo .collection p, .banner-content-phone p, .banner-content p {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5432,7 +5432,7 @@ hr {
   color: var(--unnamed-color-172026);
 }
 
-.regular-body-s-14-, .slider .slider-content p {
+.regular-body-s-14-, .cart-Container .shipping p span, .slider .slider-content p, .sub-footer .info {
   font-family: var(--unnamed-font-family-muli);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -5482,6 +5482,7 @@ nav .logo-align .logo {
   color: white;
   letter-spacing: 0.6rem;
   font-weight: 300;
+  font-size: 20px;
 }
 nav .toggle {
   display: none;
@@ -5591,10 +5592,10 @@ nav .toggle {
   margin-left: 0.6rem;
 }
 .main-footer .foot-head {
-  font-size: 1.6rem;
   font-weight: 600;
   padding-top: 4.4rem;
   text-align: left;
+  color: #172026;
 }
 
 .sub-footer {
@@ -5613,7 +5614,6 @@ nav .toggle {
 }
 .sub-footer .info {
   text-align: center;
-  font-style: normal normal normal 1.4rem/1.8rem Mulish;
   letter-spacing: 0rem;
 }
 .sub-footer .details {
@@ -5696,7 +5696,11 @@ nav .toggle {
 
 .banner img {
   width: 100%;
-  height: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 30%;
+     object-position: 100% 30%;
 }
 
 .slider {
@@ -5708,7 +5712,7 @@ nav .toggle {
   height: 223px;
 }
 .slider .slider-content {
-  background-color: rgba(27, 37, 44, 0.8509803922);
+  background-color: #1B252C;
   opacity: 1;
   margin-top: -10%;
   display: inline-block;
@@ -5813,6 +5817,9 @@ nav .toggle {
   .slider .slider-content {
     width: 95vw;
   }
+  .slider img {
+    height: 100%;
+  }
   .moreInfo {
     display: flex;
     flex-direction: column-reverse;
@@ -5824,11 +5831,11 @@ nav .toggle {
     max-width: 32.5rem;
   }
   .moreInfo .collection .btnTwo {
-    margin-top: 24px;
+    margin-top: 2.4rem;
     margin-left: 0;
   }
   .moreInfo .collection .btnOne {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .moreInfo .collection .bar {
     margin-left: 32%;
@@ -5839,7 +5846,7 @@ nav .toggle {
   .adventure .device {
     max-width: 89vw;
     /* padding-left: 10px; */
-    margin-left: 24px;
+    margin-left: 2.4rem;
     margin-top: -10%;
     height: 40vh;
     text-align: center;
@@ -5991,12 +5998,9 @@ nav .toggle {
   color: #172026;
 }
 .card .product-details .product-title {
-  font-size: 1.8rem;
   letter-spacing: 0px;
   opacity: 1;
-}
-.card .product-details .product-price {
-  font: normal normal 600 1.6rem/2rem Mulish;
+  color: #172026;
 }
 .card .product-details img {
   width: 2.4rem;
@@ -6039,7 +6043,6 @@ nav .toggle {
 }
 .filter-body p {
   text-align: left;
-  font: normal normal normal 1.6rem/2.4rem Mulish;
   padding: 0.6rem;
 }
 .filter-body .product-count {
@@ -6059,6 +6062,13 @@ nav .toggle {
   }
   .filter-body {
     display: block;
+  }
+  .card .product-image img {
+    height: 19.6rem;
+  }
+  .card .product-details .product-title {
+    font: normal normal bold 16px/20px Muli;
+    font-family: Muli;
   }
 }
 .sidenav {
@@ -6202,6 +6212,7 @@ nav .toggle {
   font: normal normal 600 1.6rem/2rem Mulish;
   letter-spacing: 0.32px;
   color: #172026;
+  box-shadow: 0px 3px 6px rgba(57, 55, 55, 0.1607843137);
 }
 .detail-info .color .size .like-share img {
   width: 1.8rem;
@@ -6209,7 +6220,6 @@ nav .toggle {
 }
 .detail-info .color h6 {
   padding: 1.6rem 0;
-  font: normal normal 600 2rem/3rem Mulish;
   letter-spacing: 0rem;
   color: #172026;
 }
@@ -6232,7 +6242,6 @@ nav .toggle {
   padding-left: 7.8rem;
   padding-top: 2.4rem;
   letter-spacing: 0.32px;
-  font: normal normal 600 1.6rem/2rem Mulish;
 }
 .detail-info .color .like-share .heart img {
   width: 1.8rem;
@@ -6248,24 +6257,19 @@ nav .toggle {
   text-align: left;
 }
 .description-product p {
-  font: normal normal normal 1.6rem/2.4rem Mulish;
   letter-spacing: 0rem;
   color: #172026;
 }
 .description-product ul li {
   list-style-type: none;
-  font: normal normal 600 1.6rem Mulish;
   letter-spacing: 0rem;
   color: #172026;
 }
 .description-product h3 {
-  font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
   letter-spacing: 0rem;
   color: #172026;
 }
 .description-product h6 {
-  font: normal normal 600 2rem/2.5rem Mulish;
-  letter-spacing: 0rem;
   color: #172026;
   padding-top: 2.4rem;
   padding-bottom: 1.6rem;
@@ -6305,20 +6309,18 @@ nav .toggle {
   padding: 1rem;
 }
 .cart-Container .carousal {
-  font: normal normal 600 4.8rem/6rem Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
   padding: 2rem;
 }
 .cart-Container h1 {
-  font: normal normal 600 4.8rem/4.5rem Source Serif Pro;
   letter-spacing: 0px;
   color: #172026;
 }
 .cart-Container .bar2 {
   width: 13rem;
   height: 0.8rem;
-  background-color: #1F39FF;
+  background-color: #E26A2C;
   border: none;
   margin-top: 1rem;
 }
@@ -6340,12 +6342,10 @@ nav .toggle {
 }
 .cart-Container .cart-products .cart-prod-detail b {
   text-align: left;
-  font: normal normal 600 2rem/2.5rem Mulish;
   letter-spacing: 0px;
   color: #172026;
 }
 .cart-Container .cart-products .cart-prod-detail p {
-  font: normal normal normal 1.6rem/2.4rem Mulish;
   letter-spacing: 0px;
   color: #172026;
 }
@@ -6354,14 +6354,12 @@ nav .toggle {
 }
 .cart-Container .shipping p {
   text-align: left;
-  font: normal normal normal 2rem/2.5rem Mulish;
   letter-spacing: 0px;
   color: #172026;
   padding: 2.4rem;
 }
 .cart-Container .shipping p span {
   float: right;
-  font: normal normal normal 1.4rem/2.1rem Mulish;
 }
 .cart-Container .shipping img {
   padding-top: 2.5rem;
@@ -6384,7 +6382,6 @@ nav .toggle {
   border: 0.2rem solid #B5B7BC;
 }
 .cart-Container .option {
-  font: normal normal 600 1.2rem/1.4rem Mulish;
   letter-spacing: 0px;
   color: #172026;
   padding: 0.3rem 1rem;
@@ -6409,11 +6406,9 @@ nav .toggle {
   padding-top: 3.2rem;
   padding-bottom: 2.4rem;
   text-align: left;
-  font: normal normal 600 2rem/2.5rem Mulish;
 }
 .cart-Container .pricing-total p {
   padding-bottom: 16px;
-  font: normal normal normal 1.6rem/2.4rem Mulish;
   letter-spacing: 0px;
   color: #172026;
   text-align: left;
@@ -6422,7 +6417,6 @@ nav .toggle {
   float: right;
 }
 .cart-Container .pricing-total .Primary-brand {
-  font: normal normal bold 14px/16px Muli;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -6476,11 +6470,9 @@ nav .toggle {
 .pricing-total h4 {
   padding-bottom: 2.4rem;
   text-align: left;
-  font: normal normal 600 2rem/2.5rem Mulish;
 }
 .pricing-total p {
   padding-bottom: 16px;
-  font: normal normal normal 1.6rem/2.4rem Mulish;
   letter-spacing: 0px;
   color: #172026;
   text-align: left;
@@ -6489,7 +6481,6 @@ nav .toggle {
   float: right;
 }
 .pricing-total .Primary-brand {
-  font: normal normal bold 1.4rem/1.6rem Mulish;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -6521,17 +6512,17 @@ nav .toggle {
 }
 .shippingInform .sign-in {
   border: 1px solid #D1D3D6;
-  height: 100px;
+  height: 10rem;
   display: inline-flex;
-  padding: 13px;
+  padding: 1.3rem;
   margin-bottom: 2.4rem;
 }
 .shippingInform .sign-in h4 {
   text-align: left;
 }
 .shippingInform .sign-in button {
-  width: 150px;
-  height: 40px;
+  width: 15rem;
+  height: 4rem;
   margin-top: 5%;
 }
 .shippingInform .customer {
@@ -6540,7 +6531,6 @@ nav .toggle {
 }
 .shippingInform .customer label {
   text-align: left;
-  font: normal normal 600 16px/24px Muli;
   letter-spacing: 0px;
   color: #181C24;
   opacity: 1;
@@ -6548,7 +6538,7 @@ nav .toggle {
 .shippingInform .customer input {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #B5B7BC;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   opacity: 1;
   color: #91959C;
   padding: 0.5rem;
@@ -6571,7 +6561,6 @@ nav .toggle {
 .shippingInform label,
 .shippingInform p {
   text-align: left;
-  font: normal normal normal 16px/25px Muli;
   letter-spacing: 0px;
   color: #172026;
   opacity: 1;
@@ -6584,7 +6573,6 @@ nav .toggle {
   margin-top: 5.1rem;
   margin-bottom: 4.8rem;
   text-align: center;
-  font: normal normal bold 14px/16px Muli;
   letter-spacing: 0px;
   color: #E26A2C;
   text-transform: uppercase;
@@ -6656,7 +6644,7 @@ nav .toggle {
   border: 2px solid #B5B7BC;
   border-radius: 8px;
   opacity: 1;
-  color: #91959C;
+  color: #91959c;
   padding: 0.5rem;
   width: 50%;
 }
@@ -6680,7 +6668,7 @@ nav .toggle {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .shippingInform {
-    padding: 0 15px;
+    padding: 0 1.5rem;
   }
   .shippingInform button .mobile {
     display: block;
@@ -6693,6 +6681,12 @@ nav .toggle {
   }
   .shippingInform .paymentInfo input {
     width: -webkit-fill-available;
+  }
+  .shippingDetails .edit p {
+    display: none;
+  }
+  .shippingDetails .edit img {
+    float: right;
   }
 }
 h2 {
@@ -6710,12 +6704,11 @@ h3 {
   color: #172026;
   opacity: 1;
   padding-bottom: 1rem;
-  padding-top: 2rem;
 }
 
 .checkoutBar {
-  width: 102px;
-  height: 8px;
+  width: 10.2rem;
+  height: 0.8rem;
   background: #E26A2C 0% 0% no-repeat padding-box;
   opacity: 1;
   margin: auto;
@@ -6723,7 +6716,7 @@ h3 {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .Checkout h3 {
-    padding-left: 15px;
+    padding-left: 1.5rem;
   }
 }
 .shippingDetails {
@@ -6772,9 +6765,17 @@ h3 {
   opacity: 1;
 }
 
+.bar {
+  width: 102px;
+  height: 8px;
+  background: #E26A2C 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin: auto;
+}
+
 .offer {
   background-color: #FF8243;
-  color: white;
+  color: #FFFFFF;
   padding: 6.8rem;
 }
 .offer h5 {

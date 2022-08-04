@@ -28,8 +28,9 @@ const acc2handler =()=>{
     <div className="aem-Grid aem-Grid--12 container Checkout">
        <h2>Checkout</h2>
        <div className='checkoutBar'></div>
-       <h3>Guest Checkout</h3>
+       
         <div className="aem-GridColumn aem-GridColumn--default--12">
+        <h3>Guest Checkout</h3>
           {isSubmit && <ShippingInform  acchandler={ acchandler}/>
           }
            {

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Instagram from '../../Images/instagram copy.svg';
 import Face from '../../Images/facebook copy.svg';
 import Twitt from '../../Images/twitter copy.svg';
+import Footer from '../../Components/Footer/mainfooter'
 const OrderSummery = () => {
     // const [ischecked, setIsChecked] = useState(" ");
     const cartData = useSelector((value) =>
@@ -15,13 +16,14 @@ const OrderSummery = () => {
     return (
         <>
             <h1>Order Successful!</h1>
+            <div className='bar'></div>
             <div className="aem-Grid aem-Grid--12 container">
                 <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 shippingInform">
 
                     <h6>Order Number #1700834</h6>
                     <div className="aem-Grid aem-Grid--12 " >
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                            {/* <ShippinginfoDetails /> */}
+                            
                             <h6>Shipping Information</h6>
                             <div>
                                 <p>{localdata.email}</p>
@@ -35,9 +37,7 @@ const OrderSummery = () => {
                             </div>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                            {/* <ShipingmethodDetails /> */}
-
-                            {/* <PaymentinfoDetails /> */}
+                            
                             <div>
                                 <h6>Shipping Method</h6>
                                 <p> {shipping} </p>
@@ -93,6 +93,7 @@ const OrderSummery = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

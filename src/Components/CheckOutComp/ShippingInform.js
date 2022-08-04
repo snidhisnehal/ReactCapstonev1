@@ -3,10 +3,17 @@ import PricingSummery from './PricingSummery';
 
 const ShippingInform = ({ acchandler }) => {
 
-  const initialValues = { username: "", email: "", password: "" };
+  const initialValues = { email: "abc@xyz.com" , 
+   phoneNumber:"+1 (555) 229-3367",
+  country:"United States",
+  firstName:"Qadim",
+  lastName:"Farhan",
+  adress1:"1098",
+  Adree2:"Wapello",
+  state :"California",
+  city:"Street",
+  zip:"91001",};
   const [formValues, setFormValues] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
-  // const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,8 +22,6 @@ const ShippingInform = ({ acchandler }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormErrors(validate(formValues));
-    // setIsSubmit(true);
     acchandler();
   };
 
@@ -24,35 +29,10 @@ const ShippingInform = ({ acchandler }) => {
     localStorage.setItem('form', JSON.stringify(formValues));
   }, [formValues]);
 
-  useEffect(() => {
-    console.log(formErrors);
-    // if (Object.keys(formErrors).length === 0 && isSubmit) {
-    //   console.log(formValues);
-    // }
-  }, [formErrors]);
-  const validate = (values) => {
-    const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.username) {
-      errors.username = "Username is required!";
-    }
-    if (!values.email) {
-      errors.email = "Email is required!";
-    } else if (!regex.test(values.email)) {
-      errors.email = "This is not a valid email format!";
-    }
-    if (!values.password) {
-      errors.password = "Password is required";
-    } else if (values.password.length < 4) {
-      errors.password = "Password must be more than 4 characters";
-    } else if (values.password.length > 10) {
-      errors.password = "Password cannot exceed more than 10 characters";
-    }
-    return errors;
-  };
+  
+  
   return (
     <>
-      {/* {isSubmit==false && ( */}
       <div className="aem-Grid aem-Grid--12 shippingInform" >
         
         <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 pr-32' >
@@ -65,18 +45,18 @@ const ShippingInform = ({ acchandler }) => {
               <input
                 type="text"
                 name="email"
-                placeholder="Email"
+                // placeholder="Email"
                 value={formValues.email}
                 onChange={handleChange}
               />
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
-              <label for="phn">Phone Number</label>
+              <label for=" phoneNumber">Phone Number</label>
               <input type="text"
-                id="phn"
+                id=" phoneNumber"
                 placeholder="(222) 222-2222"
-                name="phn"
-                value={formValues.phn}
+                name=" phoneNumber"
+                value={formValues. phoneNumber}
                 onChange={handleChange} />
             </div>
           </div>
@@ -98,40 +78,45 @@ const ShippingInform = ({ acchandler }) => {
           </div>
           <div className="aem-Grid aem-Grid--12">
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
-              <label>First Name</label>
+              <label for=" firstName">First Name</label>
               <input type="textbox"
                 placeholder="FirstName"
-                name="name"
-                value={formValues.name}
+                id=" firstName"
+                name="firstName"
+                value={formValues.firstName}
                 onChange={handleChange} />
-              <label>Street Address</label>
+              <label for="adress1">Street Address</label>
               <input type="textbox"
-                placeholder="streetAdress"
-                name="adress"
-                value={formValues.adress}
+                // placeholder="streetAdress"
+                id="adress1"
+                name="adress1"
+                value={formValues.adress1}
                 onChange={handleChange} />
-              <label>City</label>
+              <label for="city">City</label>
               <input type="textbox"
                 placeholder="city"
                 name="city"
+                id="city"
                 value={formValues.city}
                 onChange={handleChange} />
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 customer">
               <div className='aem-Grid aem-Grid--12' style={{ display: "contents" }}>
-                <label>Last Name</label>
+                <label for=" lastName">Last Name</label>
                 <input type="textbox"
                   placeholder="LasttName"
-                  name="lname"
-                  value={formValues.lname}
+                  name=" lastName"
+                  id=" lastName"
+                  value={formValues. lastName}
                   onChange={handleChange} />
               </div>
               <div className='aem-Grid aem-Grid--12' style={{ display: "contents" }}>
-                <label>Street Address 2</label>
+                <label for="Adree2">Street Address 2</label>
                 <input type="textbox"
                   placeholder="Adree2"
-                  name="adress2"
-                  value={formValues.adress2}
+                  id="Adree2"
+                  name="Adree2"
+                  value={formValues.Adree2}
                   onChange={handleChange} />
                 
               </div>
@@ -184,70 +169,9 @@ const ShippingInform = ({ acchandler }) => {
       </div>
       
 
-      {/* )}
-    {
-      isSubmit == true && ( */}
 
 
-      {/* } */}
-
-
-      {/* <div className="container">
-
-
-        <form onSubmit={handleSubmit}>
-          <h1>Login Form</h1>
-          <div className="ui divider"></div>
-          <div className="ui form">
-            <div className="field">
-              <label>Username</label>
-              <input
-                type="text"
-                name="username"
-                placeholder="Username"
-                value={formValues.username}
-                onChange={handleChange}
-              />
-            </div>
-            <p>{formErrors.username}</p>
-            <div className="field">
-              <label>Email</label>
-              <input
-                type="text"
-                name="email"
-                placeholder="Email"
-                value={formValues.email}
-                onChange={handleChange}
-              />
-            </div>
-            <p>{formErrors.email}</p>
-            <div className="field">
-              <label>Password</label>
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                value={formValues.password}
-                onChange={handleChange}
-              />
-            </div>
-            <p>{formErrors.password}</p>
-            <button className="fluid ui button blue">Submit</button>
-          </div>
-        </form>
-        <div>{Object.keys(formErrors).length === 0 && isSubmit ? (
-          <div className="ui message success">
-            <p>{formValues.email}</p><br />
-            <p>{formValues.username}</p><br />
-            <p>{formValues.password}</p>
-          </div>
-        ) : (
-          <div>
-            {JSON.stringify(formValues, undefined, 2)}
-            </div>
-        )}
-        </div>
-      </div> */}
+      
 
     </>)
 }

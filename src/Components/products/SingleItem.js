@@ -1,18 +1,10 @@
 import React from 'react'
 import Star from '../../Images/star.svg';
 import Heart from '../../Images/heart.svg';
-import Swatch01 from '../../Images/Swatch01/Swatch01.png'
-import Swatch02 from '../../Images/Swatch02/Swatch02.png'
-import Swatch03 from '../../Images/Swatch03/Swatch03.png'
-import Swatch04 from '../../Images/Swatch04/Swatch04.png'
 import Share from '../../Images/share-2.svg'
 import Down from '../../Images/chevron-down.svg'
 import { useDispatch } from 'react-redux';
 import {handleAction} from '../../redux/counterSlice';
-// import feather from '../../../Images/feather.svg'
-// import layer from '../../../Images/layers.svg'
-// import slack from '../../../Images/slack.svg'
-// import sunrise from '../../../Images/sunrise.svg'
 import {Link} from 'react-router-dom'
 import  IncDecCount  from '../../Components/IncDecButtn/IncDecCount'
 import SimpleImageSlider from "react-simple-image-slider";
@@ -110,25 +102,7 @@ const SingleItem = ({data}) => {
                         <div className='bar'></div>
                     </div>
                 </div>
-                {/* <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
-                    <div className="aem-Grid aem-Grid--12 ">
-                        <h6>Details</h6>
-                        <div className='aem-GridColumn aem-GridColumn--default--6'>
-                            <ul>
-                                <li><img src={slack} alt="Feather" style={{width:"20px",height:"15px"}}/>Sweat-wicking</li>
-                                <li><img src={feather} alt="Feather" style={{width:"20px",height:"15px"}}/>Lightweight fabric</li>
-                            </ul>
-                        </div>
-                        <div className='aem-GridColumn aem-GridColumn--default--6'>
-                            <ul>
-                                <li><img src={ sunrise} alt="Feather" style={{width:"20px",height:"15px"}}/>Breathable</li>
-                                <li><img src={layer} alt="Feather" style={{width:"20px",height:"15px"}}/>69% nylon, 31% lycra</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div> */}
+                
             </div>
         </>
     );

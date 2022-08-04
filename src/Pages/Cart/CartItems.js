@@ -11,18 +11,8 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { NavLink } from 'react-router-dom';
 import Lock from '../../Images/lock.svg'
-// const responsive = {
-//     desktop: {
-//         breakpoint: { max: 3000, min: 1024 },
-//         items: 4,
-//         slidesToSlide: 3 // optional, default to 1.
-//     },
-//     tablet: {
-//         breakpoint: { max: 1024, min: 464 },
-//         items: 3,
-//         slidesToSlide: 2 // optional, default to 1.
-//     }
-// }
+import Footer from '../../Components/Footer/mainfooter'
+
 
 //Shopping Cart
 
@@ -72,12 +62,12 @@ const CartItems = () => {
 
 
     return (
-
+        <>
         <div className='aem-Grid aem-Grid--12 container cart-Container'>
             <h1>Your Shopping Bag</h1>
             <button type='button' className='bar2'></button>
             <div className='aem-Grid aem-Grid--12 container cart-Container'>
-                <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12  '>
+                <div className='aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12 pr-32 '>
 
                     {cartData.map((value) => {
 
@@ -151,43 +141,11 @@ const CartItems = () => {
                 </div>
 
             </div>
-            {/* <div className='aem-Grid aem-Grid--12 aem-GridColumn aem-GridColumn--phone--hide aem-GridColumn--tablet--hide'>
-                <h2 className='carousal'>Recently Viewed</h2>
-                <Carousel
-                    swipeable={false}
-                    draggable={false}
-                    showDots={true}
-                    responsive={responsive}
-                    ssr={true} // means to render carousel on server-side.
-                    infinite={true}
-                    //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                    autoPlaySpeed={1000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
-                    // deviceType={this.props.deviceType}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-0-px"
-                >
-                    {data.map((product) => {
-                        console.log("carousal", product);
-                        
-                        return (
-                            <>
-                                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn aem-GridColumn--phone--hide carousalCard" >
-                                    <img src={product.image} alt="Product" style={{ height: "28vh", width: "13vw" }} />
-                                    <h4>{product.title?.split(' ').slice(0, 3).join(' ')}</h4>
-                                    <p>${product.price}</p>
-                                </div>
-                            </>)
-                    })
-                    }
-                </Carousel>
-            </div> */}
+            
 
         </div>
+         <Footer/>
+         </>
     )
 }
 

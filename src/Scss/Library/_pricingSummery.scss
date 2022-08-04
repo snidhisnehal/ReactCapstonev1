@@ -13,12 +13,14 @@
             // padding-top: 3.2rem;
             padding-bottom: 2.4rem;
             text-align: left;
-            font: normal normal 600 2rem/2.5rem Mulish;
+            // font: normal normal 600 2rem/2.5rem Mulish;
+            @extend .regular-heading-l-20-;
         }
 
         p {
             padding-bottom: 16px;
-            font: normal normal normal 1.6rem/2.4rem Mulish;
+            // font: normal normal normal 1.6rem/2.4rem Mulish;
+            @extend .regualr-body-m-16-;
             letter-spacing: 0px;
             color: $--unnamed-color-172026;
             text-align: left;
@@ -29,7 +31,8 @@
         }
 
         .Primary-brand {
-            font: normal normal bold 1.4rem/1.6rem Mulish;
+            // font: normal normal bold 1.4rem/1.6rem Mulish;
+            @extend .regular-heading-s-14- ;
             letter-spacing: 0px;
             color: $--white;
             text-transform: uppercase;

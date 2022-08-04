@@ -45,11 +45,13 @@
 
 
     .foot-head {
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
         font-weight: 600;
         // color:$col-black;
+        @extend .regular-heading-m-16-;
         padding-top: 4.4rem;
         text-align: left;
+        color: $--unnamed-color-172026;
 
     }
 }
@@ -73,9 +75,10 @@
 
     .info {
         text-align: center;
-        font-style: normal normal normal 1.4rem/1.8rem Mulish;
+        // font-style: normal normal normal 1.4rem/1.8rem Mulish;
         letter-spacing: 0rem;
         // color: $gray-3;
+        @extend .regular-body-s-14-;
     }
 
     .details {

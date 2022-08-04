@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/Order" element={<OrderSummery/>} />  
       </Routes> 
       
-     <Footer/>
+     {/* <Footer/> */}
      <SubFooter/>
     </div>
   );

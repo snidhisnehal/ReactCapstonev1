@@ -1,35 +1,28 @@
-import React, { useEffect,useState } from 'react'
-// import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
 
-const SideNav = ({filterProduct}) => {
- const [data, setData] = useState([]);
+const SideNav = ({ filterProduct }) => {
+  const [data, setData] = useState([]);
   const [isSelected, setisSelected] = useState(false);
   const [products, setProducts] = useState([]);
-  // const { id } = useParams();
   const fetchData = () => {
-      fetch(`https://fakestoreapi.com/products/categories`)
-          .then(response => {
-              return response.json()
-          })
-         .then(data => {
-             setData(data)
-            //  setProducts(data);
-          })
-      console.log(data)
+    fetch(`https://fakestoreapi.com/products/categories`)
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        setData(data)
+        //  setProducts(data);
+      })
+    console.log(data)
   }
 
 
 
   useEffect(() => {
-     fetchData()
- }, [])
+    fetchData()
+  }, [])
 
-//  const filterProduct =(cat)=> {
-//   const updatedList = data.filter((x)=>x.category === cat);
-//   console.log("men's clothing",updatedList);
-//  setProducts(updatedList);
-// setFilter(updatedList);
-// }
+
 
   return (
     <div className='aem-Grid aem-Grid--12 aem-Grid--phone--12 sidenav'>
@@ -37,54 +30,20 @@ const SideNav = ({filterProduct}) => {
       <h6 className='filter'>Filters</h6>
       <hr />
       <h6 className='attr'>Categories</h6>
-       {/* {data.map((category)=>{
-        return(
+
+      {data.map((category) => {
+        return (
           <>
-            <label className="filter-container" htmlFor="chk1-label">{category}
-                <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct({category});}} />
-                <span className="checkmark"></span>
-            </label>
-            
-          
+            <div className='category' >
+              <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={() => {
+                setisSelected(!isSelected);
+                filterProduct({ category })
+              }} />
+              <label htmlFor="chk1-label"> {category}</label><br />
+            </div>
           </>
         )
-      })
-      }  */}
-      {data.map((category) => {
-                    return (
-                        <>
-                     <div className='category' >
-                    <input type="checkbox" id='chk1-label'  aria-label="checkbox" onClick={() => {
-                        setisSelected(!isSelected);
-                        filterProduct({category})
-                    }} />
-                    <label htmlFor="chk1-label"> {category}</label><br />
-                   
-                </div>
-
-
-                        </>
-                    )
-                })} 
-      {/* <div className='Attribute-first'>
-      <h4>Categories</h4>
-      
-      <input type="checkbox" id='chk1-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct("jewelery");}} />
-              <label htmlFor="chk1-label"> Jewellery</label><br />
-              <input type="checkbox" id='chk2-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct("electronics");}}/>
-              <label htmlFor="chk2-label">  Electronics</label><br />
-              <input type="checkbox" id='chk3-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct("men's clothing");}}/>
-              <label htmlFor='chk3-label'>  Men’s Clothing</label><br />
-              <input type="checkbox" id='chk4-label' aria-label="checkbox" onClick={()=>{ setisSelected(!isSelected);
-        filterProduct("women's clothing")}} />
-              <label htmlFor='chk4-label'>Women’s Clothing</label><br />
-      
-        </div> */}
-      
+      })}
     </div>
   )
 }

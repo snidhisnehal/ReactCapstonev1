@@ -3,7 +3,7 @@ h2 {
     // font: normal normal 600 48px/45px Source Serif Pro;
     @extend .display-xl-48-dekstop-only;
     letter-spacing: 0px;
-    color: #172026;
+    color: $--unnamed-color-172026;
     opacity: 1;
     margin-bottom: 1rem;
     margin-top: 2.9rem;
@@ -13,22 +13,22 @@ h3{
         // font: normal normal 600 36px/30px Source Serif Pro;
         @extend .display-l-36-;
         letter-spacing: 0px;
-        color: #172026;
+        color: $--unnamed-color-172026;
         opacity: 1;
         padding-bottom: 1rem;
-        padding-top: 2rem;
+        // padding-top: 2rem;
 }
 
  .checkoutBar {
-    width: 102px;
-    height: 8px;
-    background: #E26A2C 0% 0% no-repeat padding-box;
+    width: 10.2rem;
+    height: .8rem;
+    background: $--primary-brand 0% 0% no-repeat padding-box;
     opacity: 1;
     margin: auto;
 }
 @media (min-width: 320px) and (max-width: 767px) {
 
     .Checkout h3 {
-        padding-left:  15px;
+        padding-left:  1.5rem;
     }
 }

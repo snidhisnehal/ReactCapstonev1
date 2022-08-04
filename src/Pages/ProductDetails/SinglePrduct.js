@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import SingleItem from '../../Components/products/SingleItem';
+import Footer from '../../Components/Footer/mainfooter'
 
 const SingleProduct = () => {
    
@@ -25,6 +26,7 @@ const SingleProduct = () => {
     return (
         <div>
            <SingleItem key={data.id} data={data} id={data.id} img={data.image} title={data.title} price={data.price} description={data.description}/>
+           <Footer/>
         </div>
     )
 };

@@ -120,6 +120,7 @@
                 font: normal normal 600 1.6rem/2rem Mulish;
                 letter-spacing: 0.32px;
                 color: $--unnamed-color-172026;
+                box-shadow: 0px 3px 6px $--gray-d3;
             }
 
             .like-share img {
@@ -130,7 +131,8 @@
 
         h6 {
             padding: 1.6rem 0;
-            font: normal normal 600 2rem/3rem Mulish;
+            // font: normal normal 600 2rem/3rem Mulish;
+            @extend .regular-heading-l-20- ;
             letter-spacing: 0rem;
              color: $--unnamed-color-172026;
         }
@@ -161,7 +163,8 @@
             padding-left: 7.8rem;
             padding-top: 2.4rem;
             letter-spacing: 0.32px;
-            font: normal normal 600 1.6rem/2rem Mulish;
+            // font: normal normal 600 1.6rem/2rem Mulish;
+            @extend .regular-heading-m-16- ;
 
             .heart img {
                 width: 1.8rem;
@@ -185,28 +188,31 @@
     text-align: left;
 
     p {
-        font: normal normal normal 1.6rem/2.4rem Mulish;
+        // font: normal normal normal 1.6rem/2.4rem Mulish;
+        @extend .regualr-body-m-16-;
         letter-spacing: 0rem;
          color: $--unnamed-color-172026;
     }
 
     ul li {
         list-style-type: none;
-        font: normal normal 600 1.6rem Mulish;
+        // font: normal normal 600 1.6rem Mulish;
+        @extend .regular-heading-m-16-;
         letter-spacing: 0rem;
         color: $--unnamed-color-172026;
     }
 
     h3 {
-        font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+        // font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
+        @extend .display-l-36-;
         letter-spacing: 0rem;
          color: $--unnamed-color-172026;
 
     }
 
     h6 {
-        font: normal normal 600 2rem/2.5rem Mulish;
-        letter-spacing: 0rem;
+        // font: normal normal 600 2rem/2.5rem Mulish;
+        @extend .regular-heading-l-20- ;
         color: $--unnamed-color-172026;
         padding-top: 2.4rem;
         padding-bottom: 1.6rem;

@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ShipingmethodDetails from './ShipingmethodDetails';
-import ShippingMethod from './ShippingMethod';
 import ShippinginfoDetails from './shippinginfoDetails';
 import PricingSummery from './PricingSummery';
 
 const PaymentInfo = ({ acc2handler }) => {
-  const initialValues = { username: "", email: "", password: "" };
+  const initialValues = { username: "", email: "", number: "4567" };
   const [formValues, setFormValues] = useState(initialValues);
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
   const [ischecked, setIsChecked] = useState(" ");
 
   const handleChange = (e) => {
@@ -18,8 +15,6 @@ const PaymentInfo = ({ acc2handler }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormErrors(validate(formValues));
-    // setIsSubmit(true);
     acc2handler();
   };
   React.useEffect(() => {
@@ -28,32 +23,8 @@ const PaymentInfo = ({ acc2handler }) => {
   React.useEffect(() => {
     localStorage.setItem('paymentMethode', JSON.stringify(ischecked));
   }, [ischecked]);
-  useEffect(() => {
-    // console.log(formErrors);
-    // if (Object.keys(formErrors).length === 0 && isSubmit) {
-    //   console.log(formValues);
-    // }
-  }, [formErrors]);
-  const validate = (values) => {
-    const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.username) {
-      errors.username = "Username is required!";
-    }
-    if (!values.email) {
-      errors.email = "Email is required!";
-    } else if (!regex.test(values.email)) {
-      errors.email = "This is not a valid email format!";
-    }
-    if (!values.password) {
-      errors.password = "Password is required";
-    } else if (values.password.length < 4) {
-      errors.password = "Password must be more than 4 characters";
-    } else if (values.password.length > 10) {
-      errors.password = "Password cannot exceed more than 10 characters";
-    }
-    return errors;
-  };
+ 
+ 
   return (
     <>
       <div className="aem-Grid aem-Grid--12 shippingInform">
@@ -61,7 +32,6 @@ const PaymentInfo = ({ acc2handler }) => {
           <ShippinginfoDetails />
           <ShipingmethodDetails />
 
-          {/* {isSubmit == false && ( */}
           <div className="aem-Grid aem-Grid--12">
 
             <form onSubmit={handleSubmit} >
@@ -72,8 +42,8 @@ const PaymentInfo = ({ acc2handler }) => {
                 <label>Credit Card</label><br />
                 <label>Name on Card</label><br />
                 <input type="textbox" /><br />
-                <label>Credit Card Number</label><br />
-                <input type="textbox" /><br />
+                <label for='number'>Credit Card Number</label><br />
+                <input type="textbox" name="number" id="number" value={formValues.number} onChange={handleChange}/><br />
                 <label>Expiration Date</label><br />
                 <input type="textbox"
                   name="date"
@@ -96,16 +66,7 @@ const PaymentInfo = ({ acc2handler }) => {
 
 
           </div>
-          {/* )}
-      {
-      isSubmit == true && ( */}
-          {/* <div style={{textAlign:"left",border:"1px solid black" , marginBottom:"10px",padding:"30px 10px"}}>
-        <h2>PaymentInfo</h2>
-        <p>{ischecked}</p>
-        <>expiry date {formValues.date} </>
-      </div> */}
-
-          {/* } */}
+      
 
         </div>
         <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12'>

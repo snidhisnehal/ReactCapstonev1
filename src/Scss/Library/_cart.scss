@@ -2,14 +2,16 @@
     padding: 1rem;
 
     .carousal {
-        font: normal normal 600 4.8rem/6rem Source Serif Pro;
+        //font: normal normal 600 4.8rem/6rem Source Serif Pro;
+        @extend .display-xl-48-dekstop-only;
         letter-spacing: 0px;
         color: $--unnamed-color-172026;
         padding: 2rem;
     }
 
     h1 {
-        font: normal normal 600 4.8rem/4.5rem Source Serif Pro;
+        // font: normal normal 600 4.8rem/4.5rem Source Serif Pro;
+        @extend .display-xl-48-dekstop-only;
         letter-spacing: 0px;
         color: $--unnamed-color-172026;
     }
@@ -17,7 +19,7 @@
     .bar2 {
         width: 13rem;
         height: .8rem;
-        background-color: $primary-brand;
+        background-color: #E26A2C;
         border: none;
         margin-top: 1rem;
     }
@@ -45,13 +47,15 @@
 
             b {
                 text-align: left;
-                font: normal normal 600 2rem/2.5rem Mulish;
+                // font: normal normal 600 2rem/2.5rem Mulish;
+                @extend .regular-body-l-20-;
                 letter-spacing: 0px;
                 color: $--unnamed-color-172026;
             }
 
             p {
-                font: normal normal normal 1.6rem/2.4rem Mulish;
+                // font: normal normal normal 1.6rem/2.4rem Mulish;
+                @extend .regualr-body-m-16-;
                 letter-spacing: 0px;
                 color: $--unnamed-color-172026;
 
@@ -68,7 +72,8 @@
             //     border-bottom: .1rem solid $col-Gray;
             // }
 
-            font: normal normal normal 2rem/2.5rem Mulish;
+            // font: normal normal normal 2rem/2.5rem Mulish;
+            @extend .regular-body-l-20-;
             letter-spacing: 0px;
             color: $--unnamed-color-172026;
             padding: 2.4rem;
@@ -76,8 +81,8 @@
 
             span {
                 float: right;
-                font: normal normal normal 1.4rem/2.1rem Mulish;
-
+                // font: normal normal normal 1.4rem/2.1rem Mulish;
+                @extend .regular-body-s-14-;
 
             }
 
@@ -118,7 +123,8 @@
 
 
     .option {
-        font: normal normal 600 1.2rem/1.4rem Mulish;
+        // font: normal normal 600 1.2rem/1.4rem Mulish;
+        @extend .regular-heading-s-14-;
         letter-spacing: 0px;
         color: $--unnamed-color-172026;
         padding: .3rem 1rem;
@@ -148,12 +154,14 @@
             padding-top: 3.2rem;
             padding-bottom: 2.4rem;
             text-align: left;
-            font: normal normal 600 2rem/2.5rem Mulish;
+            // font: normal normal 600 2rem/2.5rem Mulish;
+            @extend .regular-heading-l-20-;
         }
 
         p {
             padding-bottom: 16px;
-            font: normal normal normal 1.6rem/2.4rem Mulish;
+            // font: normal normal normal 1.6rem/2.4rem Mulish;
+            @extend .regualr-body-m-16-;
             letter-spacing: 0px;
             color: $--unnamed-color-172026;
             text-align: left;
@@ -164,20 +172,22 @@
         }
 
         .Primary-brand {
-            font: normal normal bold 14px/16px Muli;
+            // font: normal normal bold 14px/16px Muli;
+            @extend .regular-heading-s-14-;
             letter-spacing: 0px;
             color: $--white;
             text-transform: uppercase;
             opacity: 1;
-            background:$--primary-brand 0% 0% no-repeat padding-box;
+            background: $--primary-brand 0% 0% no-repeat padding-box;
             border-radius: 0px;
             border: none;
             width: 247px;
-height: 40px;
+            height: 40px;
             padding: 0;
-            img{
-                width:16px;
-                height:10px;
+
+            img {
+                width: 16px;
+                height: 10px;
             }
         }
 

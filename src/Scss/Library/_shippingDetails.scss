@@ -1,19 +1,19 @@
 .shippingDetails {
     text-align: left;
-    border: 1px solid #D1D3D6;
+    border: 1px solid $col-Gray;
     border-radius: 2px;
     opacity: 1;
     padding: 2.4rem;
 
     h6 {
         @extend .regular-heading-m-16-;
-        color: #172026;
+        color: $--unnamed-color-172026;
         padding-bottom: 1.6rem;
     }
 
     p {
         @extend .regualr-body-m-16-;
-        color: #535965;
+        color: $--gray-d1;
     }
 
     .edit {

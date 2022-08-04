@@ -25,13 +25,15 @@
 
         .product-title {
             @extend .regular-heading-l-20-;
-            font-size: 1.8rem;
+            // font-size: 1.8rem;
             letter-spacing: 0px;
             opacity: 1;
+            color: $--unnamed-color-172026;
         }
 
         .product-price {
-            font: normal normal 600 1.6rem/2rem Mulish;
+            // font: normal normal 600 1.6rem/2rem Mulish;
+            @extend .regualr-body-m-16-;
         }
 
         img {
@@ -87,7 +89,8 @@
 
     p {
         text-align: left;
-        font: normal normal normal 1.6rem/2.4rem Mulish;
+        // font: normal normal normal 1.6rem/2.4rem Mulish;
+        @extend  .regualr-body-m-16-;
         padding: .6rem;
     }
 
@@ -114,4 +117,12 @@
     .filter-body {
         display: block;
     }
+    .card .product-image img {
+        height:19.6rem;
+    }
+    .card .product-details .product-title{
+        font: normal normal bold 16px/20px Muli;
+        font-family: Muli ;
+    }
+
 }

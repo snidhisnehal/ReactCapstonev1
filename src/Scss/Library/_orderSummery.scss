@@ -1,6 +1,16 @@
+h1{
+    @extend .display-xl-48-dekstop-only;
+}
+.bar{
+    width: 102px;
+height: 8px;
+background: #E26A2C 0% 0% no-repeat padding-box;
+opacity: 1;
+margin: auto;
+}
 .offer {
-    background-color: #FF8243;
-    color: white;
+    background-color: $--primary-d1;
+    color: $--white;
     padding: 6.8rem;
 
     h5 {
