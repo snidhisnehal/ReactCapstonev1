@@ -5986,11 +5986,18 @@ nav .toggle {
 .card .product-text {
   text-decoration: none;
 }
+.card .product-image {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
 .card .product-image img {
   width: 100%;
   height: 30.2rem;
-  border: 1px solid #B5B7BC;
   padding: 1.5rem;
+  background: transparent;
+  mix-blend-mode: multiply;
+  opacity: 1;
 }
 .card .product-details {
   text-align: left;
