@@ -33,13 +33,13 @@ const Navbar = () => {
                   </div>
                   <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--6 aem-GridColumn--phone--hide main-menu">
                     <ul style={{paddingBottom:"1.2rem"}}>
-                      <li>{prop.nav1}</li>
-                      <li>{prop.nav2}</li>
-                      <li>{prop.nav3}</li>
-                      <li>{prop.nav4}</li>
-                      <li>{prop.text}</li>
+                      <li><NavLink to='/'>{prop.nav1}</NavLink></li> 
+                      <li><NavLink to="/product/womenclothing">{prop.nav2}</NavLink></li> 
+                      <li><NavLink to="/product/menclothing">{prop.nav3}</NavLink></li> 
+                      <li><NavLink to="/product/electronic"> {prop.nav4}</NavLink></li> 
+                      <li><NavLink to="/product/jwellery">{prop.text}</NavLink></li> 
                     </ul>
-                    <div style={{width: "60px",height: "7px",backgroundColor:"#FFD07F",textAlign:"center",marginLeft:"30%"}}></div>
+                    {/* <div style={{width: "60px",height: "7px",backgroundColor:"#FFD07F",textAlign:"center",marginLeft:"30%"}}></div> */}
 
                   </div>
                   <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4  aem-GridColumn--phone--6 sign-in">

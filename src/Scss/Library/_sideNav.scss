@@ -52,7 +52,10 @@
 
     .category {
         padding-bottom: 1rem;
+
         input {
+            accent-color: $--primary-brand;
+            border: 2px solid $--primary-brand;
             width: 24px;
             height: 24px;
         }
@@ -61,6 +64,7 @@
             font-size: 1.9rem;
             // padding-bottom: 2.4rem;
             padding-left: .5rem;
+            
         }
     }
 

@@ -5502,6 +5502,14 @@ nav ul li {
   opacity: 1;
   color: #FFFFFF;
 }
+nav ul li .active {
+  border-bottom: 5px solid #FDA65D;
+  padding-bottom: 7px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
 nav ul li .counter {
   margin-top: -2%;
   margin-left: -4%;
@@ -6121,6 +6129,8 @@ nav .toggle {
   padding-bottom: 1rem;
 }
 .sidenav .category input {
+  accent-color: #E26A2C;
+  border: 2px solid #E26A2C;
   width: 24px;
   height: 24px;
 }
@@ -6168,6 +6178,9 @@ nav .toggle {
 
 .detail-info {
   text-align: left;
+}
+.detail-info hr {
+  margin-top: 1.3rem;
 }
 .detail-info h3 {
   font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
@@ -6285,10 +6298,14 @@ nav .toggle {
   width: 102px;
   height: 8px;
   background-color: #E26A2C;
-  margin-top: "2.4rem";
+  margin-top: 2.4rem;
+  margin-left: inherit;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .detail-info hr {
+    margin-top: 1.3rem;
+  }
   .detail-info .catogatry {
     display: none;
   }
@@ -6310,6 +6327,9 @@ nav .toggle {
   }
   .full-image p {
     display: block;
+  }
+  .detail-info h3 {
+    margin-top: 40px;
   }
 }
 .cart-Container {

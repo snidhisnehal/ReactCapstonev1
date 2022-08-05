@@ -52,7 +52,9 @@
 
 .detail-info {
     text-align: left;
-
+     hr {
+         margin-top: 1.3rem;
+     }
 
     h3 {
         font: normal normal 600 3.6rem/4.5rem Source Serif Pro;
@@ -221,12 +223,19 @@
         width: 102px;
         height: 8px;
         background-color: #E26A2C;
-        margin-top:"2.4rem";
+        margin-top:2.4rem;
+        margin-left: inherit;
+       
     }
 }
 
+
+
 @media (min-width: 320px) and (max-width: 767px) {
     .detail-info {
+        hr{
+            margin-top: 1.3rem;
+        }
         .catogatry {
             display: none;
         }
@@ -262,6 +271,9 @@
         p {
             display: block;
         }
+    }
+    .detail-info h3{
+        margin-top: 40px;
     }
     
 }

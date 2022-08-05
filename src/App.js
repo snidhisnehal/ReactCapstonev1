@@ -8,7 +8,6 @@ import Footer from '../src/Components/Footer/mainfooter'
 import SubFooter from '../src/Components/Footer/lowerfooter'
 import SingleProduct from './Pages/ProductDetails/SinglePrduct';
 import CartItems from './Pages/Cart/CartItems';
-import ShippingInform from './Components/CheckOutComp/ShippingInform';
 import Checkout from './Pages/Checkout/Checkout';
 import OrderSummery from './Pages/OrderSummery/OrderSummery';
 
@@ -20,6 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} /> 
         <Route path="/product" element={<ProductListing />} /> 
+        <Route path="/product/womenclothing" element={<ProductListing />} />
+        <Route path="/product/menclothing" element={<ProductListing />} />
+        <Route path="/product/electronic" element={<ProductListing />} />
+        <Route path="/product/jwellery" element={<ProductListing />} />
         <Route exact path="/products/:id" element={<SingleProduct />} />
         <Route exact path="/cart" element={<CartItems/>} />  
         <Route exact path="/checkout" element={<Checkout/>} /> 

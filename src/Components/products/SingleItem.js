@@ -8,6 +8,7 @@ import {handleAction} from '../../redux/counterSlice';
 import {Link} from 'react-router-dom'
 import  IncDecCount  from '../../Components/IncDecButtn/IncDecCount'
 import SimpleImageSlider from "react-simple-image-slider";
+import SimpleSlider from './SimpleSlider';
 
 const SingleItem = ({data}) => {
     
@@ -17,14 +18,14 @@ const SingleItem = ({data}) => {
         console.log(data);
     }
      
-    const images = [
-        { url: data.image },
-        { url: data.image},
-        { url: data.image},
-        { url: data.image },
-        { url: data.image }
+    // const images = [
+    //     { url: data.image },
+    //     { url: data.image},
+    //     { url: data.image},
+    //     { url: data.image },
+    //     { url: data.image }
     
-      ];
+    //   ];
 
     
     // let productTitle = data.title?.split(' ').slice(0,3).join(' ');
@@ -34,6 +35,7 @@ const SingleItem = ({data}) => {
             <div className="aem-Grid aem-Grid--12 container main">
                 <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12'>
                     <div className="aem-Grid aem-Grid--12 aem-Grid--phone--12" >
+                    
                         <div className='aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--hide single'>
                             <img src={data.image} alt="product" style={{borderBottom:"4px solid #E26A2C"}}/>
                             <img src={data.image} alt="product " />
@@ -50,15 +52,17 @@ const SingleItem = ({data}) => {
                         {/* <div className="aem-Grid aem-Grid--12 aem-GridColumn--default--hide aem-Grid--phone--12"> */}
                         <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 full-image2'>
                         <p>Clothing / Women’s / Outerwear</p>
-                        <SimpleImageSlider
+                        <SimpleSlider data={data}/>
+                        {/* <SimpleImageSlider
                             width={350}
                             height={550}
                             images={images}
                             showBullets={true}
                             // showNavs={true}
-                          />
+                          /> */}
                         {/* </div> */}
                         </div>
+                       
                     </div>
                 </div>
 

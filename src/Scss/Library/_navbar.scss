@@ -27,10 +27,20 @@ nav {
 
     ul {
         text-align: right;
-
+        // paddingBottom:1.2rem;
     }
-
+   
     ul li {
+        .active {
+            border-bottom: 5px solid $--primary-m1;
+            padding-bottom: 7px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            
+        }
+        
         display: inline;
         padding-right: 0rem;
         padding-left: 3.2rem;
