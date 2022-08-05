@@ -10,7 +10,7 @@ const Banner = () => {
           <button className='bar' type='button'></button>
         </div>
         <div className="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
-          <img src={require('../../Images/mens_outerwear.png')} alt='Logo' aria-label='desktop-logo' className='hero-image' />
+          <img src={require('../../Images/images/MicrosoftTeams-image (1).png')} alt='Logo' aria-label='desktop-logo' className='hero-image' />
         </div>
       </div>
     </section>

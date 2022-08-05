@@ -25,7 +25,7 @@
     width: 10.2rem;
     height: .8rem;
     background-color:$--primary-brand;
-    margin: 0 auto;
+    margin: auto;
     border:none
 }
 }
@@ -34,6 +34,7 @@
     height: 35.2rem;
     padding: 1.6rem 0;
     width: 100%;
+    object-fit: cover;
 }
  
 }
@@ -46,15 +47,22 @@
         display:flex;
         flex-direction: column-reverse;
         .hero-container{
-            margin: -5.9rem 4rem 0;
+            margin: -12.9rem 4rem 0;
             height: -1vh;
             width: 80vw !important;
             padding: 0;
+            height:19.2rem;
             .subheader{
                 visibility: visible;
                 
             }
+            .bar{
+                margin-top: 1.5rem;
+            }
         }
+         .hero-image{
+             padding-top: 0;
+         }
         
     }
     
